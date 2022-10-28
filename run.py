@@ -3,7 +3,8 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 import gspread
 from google.oauth2.service_account import Credentials
-from questionanswer_lev_one import level_one
+from questionanswer_lev_one import questions
+from questionanswer_lev_one import answers
 
 
 SCOPE = [
@@ -44,7 +45,9 @@ def get_question_answers():
     get questions and answers and print for player input
     """
 
-    for question in level_one:
-        
+    for question in questions:
+        ask = questions[question]["question"]
+        print(ask)
+
 
 get_question_answers()

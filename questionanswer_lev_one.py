@@ -66,4 +66,3 @@ answers = {
     }
 }
 
-print(level_one) 
