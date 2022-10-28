@@ -5,6 +5,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 from questionanswer_lev_one import questions
 from questionanswer_lev_one import answers
+import random
 
 
 SCOPE = [
@@ -44,10 +45,12 @@ def get_question_answers():
     """
     get questions and answers and print for player input
     """
-
-    for question in questions:
-        ask = questions[question]["question"]
-        print(ask)
+    sample = random.choice(list(questions.items()))[1]
+    print(sample)
+    
+   # for question in questions:
+   #     ask = questions[question]["question"]
+        
 
 
 get_question_answers()
