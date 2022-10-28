@@ -3,6 +3,8 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 import gspread
 from google.oauth2.service_account import Credentials
+from questionanswer_lev_one import level_one
+
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -34,5 +36,15 @@ def logo_page():
     print("                      Can you Guess That TV Show \n")
 
 
-logo_page()
 
+
+def get_question_answers():
+
+    """
+    get questions and answers and print for player input
+    """
+
+    for question in level_one:
+        
+
+get_question_answers()
