@@ -18,3 +18,20 @@ SHEET = GSPREAD_CLIENT.open("login")
 login = SHEET.worksheet("login")
 data = login.get_all_values()
 print(data)
+
+def logo_page():
+
+    """
+    print game logo and name
+    """
+
+    print( "  __________________    ______________   ____________.__  "  )               
+    print(" /  _____\__    ___/    \__    ___\   \ /   /   _____|  |__   ______  _  __")
+    print("/   \  ___ |    |  ______ |    |   \   Y   /\_____  \|  |  \ /  _ \ \/ \/ /")
+    print("\    \_\  \|    | /_____/ |    |    \     / /        |   Y  (  <_> \     / ")
+    print(" \______  /|____|         |____|     \___/ /_______  |___|  /\____/ \/\_/  ")
+    print("        \/                                         \/     \/               \n")
+    print("                      Can you Guess That TV Show \n")
+
+
+logo_page()
