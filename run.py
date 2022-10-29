@@ -45,12 +45,12 @@ def get_question_answers():
     """
     get questions and answers and print for player input
     """
-    sample = random.choice(list(questions.items()))[1]
-    print(sample)
+   # sample = random.choice(list(questions.items()))[1]
+   # print(sample)
     
-   # for question in questions:
-   #     ask = questions[question]["question"]
-        
+    for question in questions:
+        ask = questions[question]["question"]
+    print(ask)
 
 
 get_question_answers()
