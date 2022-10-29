@@ -48,9 +48,13 @@ def get_question_answers():
    # sample = random.choice(list(questions.items()))[1]
    # print(sample)
     
-    for question in questions:
-        ask = questions[question]["question"]
-    print(ask)
+    randoms = random.choice([question for question in questions.values()])
+    question = randoms["question"]
+    print(question)
+
+    #for question in questions:
+     #   ask = questions[question]["question"]
+   # print(ask)
 
 
 get_question_answers()
