@@ -68,5 +68,8 @@ def check_answer():
     else:
         return False      
 
+def game_level():
 
+def score():
+    
 get_question_answers()
