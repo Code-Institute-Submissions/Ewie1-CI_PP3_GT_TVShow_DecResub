@@ -51,10 +51,22 @@ def get_question_answers():
     randoms = random.choice([question for question in questions.values()])
     question = randoms["question"]
     print(question)
+    print("")
+    ans = get_answer()
+    print(ans)
 
-    #for question in questions:
-     #   ask = questions[question]["question"]
-   # print(ask)
+def get_answer():
+
+    """
+    Get player answer and dertmine true or false
+    """
+    answer = input("Guess the Show:")
+
+def check_answer():
+    if questions[question]["answer"] == answer:
+        return True  
+    else:
+        return False      
 
 
 get_question_answers()
