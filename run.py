@@ -34,9 +34,27 @@ def logo_page():
     print("/   \  ___ |    |  ______ |    |   \   Y   /\_____  \|  |  \ /  _ \ \/ \/ /")
     print("\    \_\  \|    | /_____/ |    |    \     / /        |   Y  (  <_> \     / ")
     print(" \______  /|____|         |____|     \___/ /_______  |___|  /\____/ \/\_/  ")
-    print("        \/                                         \/     \/               \n")
+    print("        \/                                         \/     \/               ")
+    print("-" *70)
     print("                      Can you Guess That TV Show \n")
 
+score = 0
+
+def scores():
+    score = 0
+    if score < 1000:
+        print("Run level 1")
+        return True
+    elif score >= 1000:
+        print("Run level 2")
+    elif score >= 2000:
+        print("Run level 3")
+    elif score == 3000:
+        print("End/Restart game")
+    else:
+        print("end game")
+   
+    print(                                                             f"Your Score:{score}")    
 
 
 
@@ -45,31 +63,34 @@ def get_question_answers():
     """
     get questions and answers and print for player input
     """
-   # sample = random.choice(list(questions.items()))[1]
-   # print(sample)
     
     randoms = random.choice([question for question in questions.values()])
     question = randoms["question"]
     print(question)
+    question = randoms["answer"]
     print("")
-    ans = get_answer()
-    print(ans)
+    ans = input("Guess the Show:")
+    check_answer(question, ans, score)
+    
 
-def get_answer():
-
+def check_answer(question, ans, score):
     """
-    Get player answer and dertmine true or false
+    Check player answer is wrong or correct, 
+    print feed back 
     """
-    answer = input("Guess the Show:")
-
-def check_answer():
-    if questions[question]["answer"] == answer:
+    if question == ans:
+        score += 125
+        print("Good job!")
         return True  
     else:
+        print("Naahh! Try again..")
         return False      
 
-def game_level():
 
-def score():
-    
-get_question_answers()
+def main():
+   
+    logo_page()
+    scores()
+    get_question_answers()
+
+main()    
