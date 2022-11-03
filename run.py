@@ -6,6 +6,8 @@ from google.oauth2.service_account import Credentials
 from questionanswer_lev_one import questions
 from questionanswer_lev_one import answers
 import random
+import sys
+import os
 
 
 SCOPE = [
@@ -35,10 +37,10 @@ def logo_page():
     print("\    \_\  \|    | /_____/ |    |    \     / /        |   Y  (  <_> \     / ")
     print(" \______  /|____|         |____|     \___/ /_______  |___|  /\____/ \/\_/  ")
     print("        \/                                         \/     \/               ")
-    print("-" *70)
+    print("-" *75)
     print("                      Can you Guess That TV Show \n")
 
-score = 0
+
 
 def scores():
     score = 0
@@ -54,8 +56,13 @@ def scores():
     else:
         print("end game")
    
-    print(                                                             f"Your Score:{score}")    
+   # print(                                                             f"Your Score:{score}")    
 
+def clear_screen():
+    """
+    Clear screen
+    """
+    os.system('clear') 
 
 
 def get_question_answers():
@@ -64,26 +71,36 @@ def get_question_answers():
     get questions and answers and print for player input
     """
     
-    randoms = random.choice([question for question in questions.values()])
-    question = randoms["question"]
-    print(question)
-    question = randoms["answer"]
-    print("")
-    ans = input("Guess the Show:")
-    check_answer(question, ans, score)
+    while True:
+        randoms = random.choice([question for question in questions.values()])
+        question = randoms["question"]
+        print(question)
+        question = randoms["answer"]
+        print("")
+        ans = input("Guess the Show:")
+        if check_answer(question, ans):
+            print("Awesome!")
+            break
+    #if answer_check:
+    #    score += 125
+    #  break
+    #    chances -= 1
+      #  break
+                
     
 
-def check_answer(question, ans, score):
+def check_answer(question, ans):
     """
     Check player answer is wrong or correct, 
     print feed back 
     """
     if question == ans:
-        score += 125
         print("Good job!")
+       # clear_screen()
         return True  
     else:
         print("Naahh! Try again..")
+
         return False      
 
 
