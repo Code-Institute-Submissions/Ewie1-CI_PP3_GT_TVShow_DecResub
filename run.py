@@ -40,6 +40,8 @@ def logo_page():
     print("-" *75)
     print("                      Can you Guess That TV Show \n")
 
+    print("                                                             "f"Your Score:{score}") 
+
 
 
 def scores():
@@ -56,8 +58,8 @@ def scores():
         print("End/Restart game")
     else:
         print("end game")
-   
-   # print(                                                             f"Your Score:{score}")    
+
+    
 
 def clear_screen():
     """
@@ -71,26 +73,20 @@ def get_question_answers():
     """
     get questions and answers and print for player input
     """
-    
-    while True:
+    for question in questions:
+        chances = 3 
+    while chances > 0:
         randoms = random.choice([question for question in questions.values()])
         question = randoms["question"]
         print(question)
         question = randoms["answer"]
         print("")
         ans = input("Guess the Show:")
-        if check_answer(question, ans, score):
-            print("Awesome!")
+        if check_answer(question, ans, score, chances):
             break
-    #if answer_check:
-    #    score += 125
-    #  break
-    #    chances -= 1
-      #  break
+        chances -= 1
                 
-    
-
-def check_answer(question, ans, score):
+def check_answer(question, ans, score, chances):
     """
     Check player answer is wrong or correct, 
     print feed back 
@@ -101,11 +97,10 @@ def check_answer(question, ans, score):
         print("Good job!")
        # clear_screen()
         return True  
-    else:
-        
+    elif question != ans:
+        return
         print("Naahh! Try again..")
-
-        return False      
+             
 
 
 def main():
@@ -113,5 +108,5 @@ def main():
     logo_page()
     scores()
     get_question_answers()
-score = 0 
+score = 0
 main()    
