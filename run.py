@@ -38,14 +38,25 @@ def logo_page():
     print(" \______  /|____|         |____|     \___/ /_______  |___|  /\____/ \/\_/  ")
     print("        \/                                         \/     \/               ")
     print("-" *75)
-    print("                      Can you Guess That TV Show \n")
-
-    print("                                                             "f"Your Score:{score}") 
 
 
+def intro():
+
+    print("Welcome to Guess That TV Show!")
+    print("Test your knowledge on some of the most famous TV show!")
+    print("Guess which show these top TV quotes are from?")
+    print("There are 3 levels of tests\nScore 1000 ponits to get to the next level")
+    input("Press any key to begin")
+    return True
+
+   # print("                      Can you Guess That TV Show \n")
+    
+
+   
+score = 0
 
 def scores():
-    score = 0
+
     if score < 1000:
         print("Run level 1")
         print("                                                             "f"Your Score:{score}") 
@@ -59,7 +70,6 @@ def scores():
     else:
         print("end game")
 
-    
 
 def clear_screen():
     """
@@ -72,41 +82,44 @@ def get_question_answers():
 
     """
     get questions and answers and print for player input
+    loop our attepmt variables
     """
+    score = 0
     for question in questions:
-        chances = 3 
-    while chances > 0:
+        attempts = 3 
+    while attempts > 0:
         randoms = random.choice([question for question in questions.values()])
         question = randoms["question"]
         print(question)
         question = randoms["answer"]
         print("")
         ans = input("Guess the Show:")
-        if check_answer(question, ans, score, chances):
+        check = check_answer(question, ans, score, attempts)
+        if check:
+            score += 125
             break
-        chances -= 1
-                
-def check_answer(question, ans, score, chances):
+        attempts -= 1
+              
+def check_answer(question, ans, score, attempts):
     """
     Check player answer is wrong or correct, 
     print feed back 
-    """
-    
+    """ 
+    score = 0
     if question == ans:
         score = score + 125
-        print("Good job!")
+        print(f"Good job!{score} ")
        # clear_screen()
         return True  
     elif question != ans:
-        return
         print("Naahh! Try again..")
+        return False
              
-
-
 def main():
     
     logo_page()
+    intro()
     scores()
     get_question_answers()
-score = 0
+
 main()    
