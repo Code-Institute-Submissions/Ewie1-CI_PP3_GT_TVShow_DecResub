@@ -46,6 +46,7 @@ def scores():
     score = 0
     if score < 1000:
         print("Run level 1")
+        print("                                                             "f"Your Score:{score}") 
         return True
     elif score >= 1000:
         print("Run level 2")
@@ -78,7 +79,7 @@ def get_question_answers():
         question = randoms["answer"]
         print("")
         ans = input("Guess the Show:")
-        if check_answer(question, ans):
+        if check_answer(question, ans, score):
             print("Awesome!")
             break
     #if answer_check:
@@ -89,25 +90,28 @@ def get_question_answers():
                 
     
 
-def check_answer(question, ans):
+def check_answer(question, ans, score):
     """
     Check player answer is wrong or correct, 
     print feed back 
     """
+    
     if question == ans:
+        score = score + 125
         print("Good job!")
        # clear_screen()
         return True  
     else:
+        
         print("Naahh! Try again..")
 
         return False      
 
 
 def main():
-   
+    
     logo_page()
     scores()
     get_question_answers()
-
+score = 0 
 main()    
