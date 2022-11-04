@@ -47,13 +47,15 @@ def intro():
     print("Guess which show these top TV quotes are from?")
     print("There are 3 levels of tests\nScore 1000 ponits to get to the next level")
     input("Press any key to begin")
+    clear_screen()
+    logo_page()
     return True
 
-   # print("                      Can you Guess That TV Show \n")
     
 
    
 score = 0
+print("                                                             "f"Your Score:{score}") 
 
 def scores():
 
@@ -70,7 +72,16 @@ def scores():
     else:
         print("end game")
 
+def repeat_random(choices):
+    i = 0
+    chosen = random.choice(choices)
+    while i > 1:
+        print(chosen)
+        i += 1
 
+
+   
+  
 def clear_screen():
     """
     Clear screen
@@ -84,7 +95,8 @@ def get_question_answers():
     get questions and answers and print for player input
     loop our attepmt variables
     """
-    score = 0
+    print("                      Can you Guess The TV Show?? \n")
+    
     for question in questions:
         attempts = 3 
     while attempts > 0:
@@ -96,27 +108,33 @@ def get_question_answers():
         ans = input("Guess the Show:")
         check = check_answer(question, ans, score, attempts)
         if check:
-            score += 125
+            continue_play()
             break
         attempts -= 1
+        
               
 def check_answer(question, ans, score, attempts):
     """
     Check player answer is wrong or correct, 
     print feed back 
     """ 
-    score = 0
+    
     if question == ans:
-        score = score + 125
-        print(f"Good job!{score} ")
+        print(f"Good job!{score + 125} ")
        # clear_screen()
         return True  
     elif question != ans:
         print("Naahh! Try again..")
         return False
-             
+
+def continue_play():
+    clear_screen()
+    logo_page()
+    scores()
+    get_question_answers()
+        
 def main():
-    
+    score = 0
     logo_page()
     intro()
     scores()
