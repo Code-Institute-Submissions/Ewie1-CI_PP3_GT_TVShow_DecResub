@@ -41,8 +41,11 @@ def logo_page():
 
 
 def intro():
-
-    print("Welcome to Guess That TV Show!")
+    """
+    Print game intro
+    input any key to start game
+    """
+    print("Welcome to Guess That TV Shows!")
     print("Test your knowledge on some of the most famous TV show!")
     print("Guess which show these top TV quotes are from?")
     print("There are 3 levels of tests\nScore 1000 ponits to get to the next level")
