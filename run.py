@@ -58,6 +58,9 @@ score = 0
 print("                                                             "f"Your Score:{score}") 
 
 def scores():
+    """
+    Use score count to determine game levels
+    """
 
     if score < 1000:
         print("Run level 1")
@@ -72,22 +75,12 @@ def scores():
     else:
         print("end game")
 
-def repeat_random(choices):
-    i = 0
-    chosen = random.choice(choices)
-    while i > 1:
-        print(chosen)
-        i += 1
-
-
-   
-  
+ 
 def clear_screen():
     """
     Clear screen
     """
     os.system('clear') 
-
 
 def get_question_answers():
 
@@ -117,23 +110,27 @@ def check_answer(question, ans, score, attempts):
     """
     Check player answer is wrong or correct, 
     print feed back 
-    """ 
-    
+    """  
     if question == ans:
         print(f"Good job!{score + 125} ")
-       # clear_screen()
         return True  
     elif question != ans:
         print("Naahh! Try again..")
         return False
 
 def continue_play():
+    """
+    Run function to contniue play
+    """
     clear_screen()
     logo_page()
     scores()
     get_question_answers()
         
 def main():
+    """
+    Main 
+    """
     score = 0
     logo_page()
     intro()
