@@ -18,8 +18,29 @@ data = login.get_all_values()
 print(data)
 
 
+levels = ["Level 1", "Level 2", "Level 3"]
+
 def get_user_name():
+    """
+    get player name
+    """
+    print("Enter game name to save game or get to the next level")
+    print("Your name must be consist of letters only")
+    
+    player_name = input("Game name:")
+   # print(f"game name: {player_name}")
+    
+    name_data = player_name
+    validate_name(name_data)
 
-def get_email():
+def validate_name(name):
+    """
+    Validate player name
+    """
+    print(name)
 
-def get_level():
+get_user_name()
+
+#def get_email():
+
+#def get_level():
