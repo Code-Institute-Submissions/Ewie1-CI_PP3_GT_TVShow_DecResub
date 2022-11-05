@@ -24,22 +24,40 @@ def get_user_name():
     """
     get player name
     """
-    print("Enter game name to save game or get to the next level")
-    print("Your name must be consist of letters only")
+    while True:    
+        print("Enter game name to save game or get to the next level")
+        print("Your name must be consist of letters only")
     
-    player_name = input("Game name:")
+        player_name = input("Game name:")
    # print(f"game name: {player_name}")
     
-    name_data = player_name
-    validate_name(name_data)
+        name_data = player_name
+        if validate_name(name_data):
+            print("Player name saved")
+            break
 
 def validate_name(name):
     """
     Validate player name
     """
-    print(name)
+    try:
+        if len(name) != 5:
+            raise ValueError(f"Your name must be consisted of 5 digits, you provided {len(name)}")
+    except ValueError as e:
+        print(f"Invalid data: {e}, Please try again.\n")
+        return False
+    
+    return True
+def save_data_worksheet():
+    """
+    Update player information to worksheet
+    """
+    
 
-get_user_name()
+
+
+name_data = get_user_name()
+
 
 #def get_email():
 
