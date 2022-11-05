@@ -90,8 +90,18 @@ def save_data_worksheet(data):
     name_save.append_row(data)
     print("Player saved")
 
-data = get_user_name()
-new_data = [data]
-save_data_worksheet(new_data)
+#data = get_user_name()
+#new_data = [data]
+#save_data_worksheet(new_data)
+
+def get_player_info():
+    play = SHEET.worksheet("player").get_all_values()
+
+    i = ['shev1', '', '', '', '']
+    if i in play:
+        print("hello")
+    else:
+        pass
 
 
+get_player_info()
