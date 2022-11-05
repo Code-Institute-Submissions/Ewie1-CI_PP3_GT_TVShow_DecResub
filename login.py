@@ -30,7 +30,7 @@ def get_user_name():
         if validate_name(name_data):
             print("Player name saved")
             break
-
+    return name_data
 def validate_name(name):
     """
     Validate player name
@@ -43,19 +43,19 @@ def validate_name(name):
         return False
     return True
 
-low = get_user_name()
-print(low)
  
 
-#def save_data_worksheet(data):
-   # """
-   # Update player information to worksheet
-   # """
-   # print("Saving name...")
-   # name_save = SHEET.worksheet("player")
-   # name_save.append_row(data)
-   # print("Player saved")
+def save_data_worksheet(data):
+    """
+    Update player information to worksheet
+    """
+    print("Saving name...")
+    name_save = SHEET.worksheet("player")
+    name_save.append_row(data)
+    print("Player saved")
 
-
+data = get_user_name()
+new_data = [data]
+save_data_worksheet(new_data)
 
 
