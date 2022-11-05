@@ -113,7 +113,7 @@ def save_data_worksheet(data):
     name_save.append_row(data)
     print("Player saved")
 
-def user_info_list():
+def user_info_list(n, e, l):
     """
     Store all user input in a list and
     add to spreadsheet
@@ -129,15 +129,19 @@ def user_info_list():
     new_data = [val for val in data]
     save_data_worksheet(new_data)
 
-def get_player_info():
+def get_player_info(n, e, l):
     
     play = SHEET.worksheet("player").get_all_values()
 
-    i = data
-    if i in play:
-        print("hello")
+    
+    if n in play:
+        print("name")
+    elif e in play:
+        print("email")
+    elif l in play:
+        print("level")
     else:
         pass
     return
 #def main():
-get_player_info()
+get_player_info(n, e, l)
