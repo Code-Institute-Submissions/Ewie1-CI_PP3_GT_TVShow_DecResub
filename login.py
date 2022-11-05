@@ -31,6 +31,42 @@ def get_user_name():
             print("Player name saved")
             break
     return name_data
+
+def get_user_email():
+    """
+    get player email
+    """
+    while True:    
+        print("Enter your email to save game or get to the next level")
+        print("Your name must be consist of letters only")
+    
+        player_email = input("Enter your email:")
+        # print(f"game name: {player_name}")
+    
+        email_data = player_email
+        if validate_email(email_data):
+            print("Player email saved")
+            break
+    return email_data
+
+def get_user_level():
+    """
+    get player level
+    """
+    while True:    
+        print("Enter game level to save game or get to the next level")
+        print("Your name must be consist of letters only")
+    
+        player_level = input("Game level:")
+        # print(f"game name: {player_name}")
+    
+        level_data = player_level
+        if validate_level(level_data):
+            print("Player name saved")
+            break
+    return level_data
+
+
 def validate_name(name):
     """
     Validate player name
