@@ -79,7 +79,30 @@ def validate_name(name):
         return False
     return True
 
- 
+def validate_email(email):
+    """
+    Validate player name
+    """
+    try:
+        if len(email) != 5:
+            raise ValueError(f"Your name must be consisted of 5 digits, you provided {len(email)}")
+    except ValueError as e:
+        print(f"Invalid data: {e}, Please try again.\n")
+        return False
+    return True
+
+def validate_level(level):
+    """
+    Validate player name
+    """
+    try:
+        if len(level) != 5:
+            raise ValueError(f"Your name must be consisted of 5 digits, you provided {len(level)}")
+    except ValueError as e:
+        print(f"Invalid data: {e}, Please try again.\n")
+        return False
+    return True
+
 
 def save_data_worksheet(data):
     """
@@ -90,9 +113,17 @@ def save_data_worksheet(data):
     name_save.append_row(data)
     print("Player saved")
 
-#data = get_user_name()
-#new_data = [data]
-#save_data_worksheet(new_data)
+
+data = []
+n = get_user_name()
+e = get_user_email()
+l = get_user_level()
+
+data.append(n)
+data.append(e)
+data.append(l)
+new_data = [val for val in data]
+save_data_worksheet(new_data)
 
 def get_player_info():
     play = SHEET.worksheet("player").get_all_values()
@@ -103,5 +134,5 @@ def get_player_info():
     else:
         pass
 
-
-get_player_info()
+#def main():
+ #   get_player_info()
