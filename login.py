@@ -13,12 +13,7 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("login")
 
-login = SHEET.worksheet("login")
-data = login.get_all_values()
-print(data)
 
-
-levels = ["Level 1", "Level 2", "Level 3"]
 
 def get_user_name():
     """
@@ -29,7 +24,7 @@ def get_user_name():
         print("Your name must be consist of letters only")
     
         player_name = input("Game name:")
-   # print(f"game name: {player_name}")
+        # print(f"game name: {player_name}")
     
         name_data = player_name
         if validate_name(name_data):
@@ -46,19 +41,21 @@ def validate_name(name):
     except ValueError as e:
         print(f"Invalid data: {e}, Please try again.\n")
         return False
-    
     return True
-def save_data_worksheet():
-    """
-    Update player information to worksheet
-    """
-    
+
+low = get_user_name()
+print(low)
+ 
+
+#def save_data_worksheet(data):
+   # """
+   # Update player information to worksheet
+   # """
+   # print("Saving name...")
+   # name_save = SHEET.worksheet("player")
+   # name_save.append_row(data)
+   # print("Player saved")
 
 
 
-name_data = get_user_name()
 
-
-#def get_email():
-
-#def get_level():
