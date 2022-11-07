@@ -83,6 +83,7 @@ def get_question_answers():
             if check:
                 score += 125
                 scores(score)
+                    
               # continue_play()
                 
            # attempts -= 1
@@ -135,6 +136,11 @@ def continue_play():
    # scores()
    # get_question_answers()
 
+def gameover():
+    """
+    """
+    if len(questions):
+        print("Gameover")
 
 def main():
     """
@@ -145,6 +151,7 @@ def main():
     intro()
     scores(score)
     get_question_answers()
+    gameover()
 
 
 main()
