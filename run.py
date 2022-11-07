@@ -46,7 +46,7 @@ def scores(score):
     Use score count to determine game levels
     """
 
-    if score >= 500:
+    if score >= 1000:
         print("Run level 1")
         continue_play()
          
@@ -60,7 +60,21 @@ def scores(score):
     else:
         print("end game")
 
- 
+def gameover(score):
+    """
+    """
+    
+    if score > 875 and score < 1000:
+        print("Gameover")
+        print("Try again")
+    elif len(questions) and score == 1900: 
+        print("Gameover")
+    elif len(questions) and score == 2900:
+        print("gameover")
+    else:
+        pass       
+    
+
 def clear_screen():
     """
     Clear screen
@@ -83,9 +97,7 @@ def get_question_answers():
             if check:
                 score += 125
                 scores(score)
-                    
-              # continue_play()
-                
+                gameover(score)
            # attempts -= 1
         break
 
@@ -136,12 +148,6 @@ def continue_play():
    # scores()
    # get_question_answers()
 
-def gameover():
-    """
-    """
-    if len(questions):
-        print("Gameover")
-
 def main():
     """
     Main 
@@ -151,7 +157,7 @@ def main():
     intro()
     scores(score)
     get_question_answers()
-    gameover()
+    gameover(score)
 
 
 main()
