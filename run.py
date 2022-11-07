@@ -41,13 +41,14 @@ def intro():
 
 
 
-def scores():
+def scores(score):
     """
     Use score count to determine game levels
     """
 
-    if score < 1000:
+    if score >= 500:
         print("Run level 1")
+        continue_play()
          
         return True
     elif score >= 1000:
@@ -81,6 +82,7 @@ def get_question_answers():
             check = check_answer(question, ans, score, attempts)
             if check:
                 score += 125
+                scores(score)
               # continue_play()
                 
            # attempts -= 1
@@ -118,6 +120,7 @@ def check_answer(question, ans, score, attempts):
     """  
     if questions[question]["answer"] == ans:
         print(f"Good job!{score + 125} ")
+        
         return True
     else:
         print("Naahh! Try again..")
@@ -127,20 +130,20 @@ def continue_play():
     """
     Run function to contniue play
     """
-    clear_screen()
+   # clear_screen()
     logo_page()
-    scores()
-    get_question_answers()
+   # scores()
+   # get_question_answers()
 
 
 def main():
     """
     Main 
     """
-
+    score = 0
     logo_page()
     intro()
-   # scores()
+    scores(score)
     get_question_answers()
 
 
