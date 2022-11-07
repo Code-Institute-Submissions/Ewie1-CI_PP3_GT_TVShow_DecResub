@@ -1,13 +1,11 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
-
-from questionanswer_lev_one import questions
-from questionanswer_lev_one import answers
 import random
 import sys
 import os
-
+from questionanswer_lev_one import questions
+from questionanswer_lev_one import answers
 
 
 
@@ -40,11 +38,8 @@ def intro():
     logo_page()
     return True
 
-    
 
-   
-score = 0
-print("                                                             "f"Your Score:{score}") 
+
 
 def scores():
     """
@@ -53,7 +48,7 @@ def scores():
 
     if score < 1000:
         print("Run level 1")
-        print("                                                             "f"Your Score:{score}") 
+         
         return True
     elif score >= 1000:
         print("Run level 2")
@@ -72,38 +67,59 @@ def clear_screen():
     os.system('clear') 
 
 def get_question_answers():
+    """
+    Test function
+    """
+    while True:
+        score = 0
 
-    """
-    get questions and answers and print for player input
-    loop our attepmt variables
-    """
-    print("                      Can you Guess The TV Show?? \n")
-    
-    for question in questions:
-        attempts = 3 
-    while attempts > 0:
-        randoms = random.choice([question for question in questions.values()])
-        question = randoms["question"]
-        print(question)
-        question = randoms["answer"]
-        print("")
-        ans = input("Guess the Show:")
-        check = check_answer(question, ans, score, attempts)
-        if check:
-            continue_play()
-            break
-        attempts -= 1
-        
+        for question in questions:
+            attempts = 3
+        #    while attempts > 0:
+            print(questions[question]["question"])
+            ans = input("Enter Show:")
+            check = check_answer(question, ans, score, attempts)
+            if check:
+                score += 125
+              # continue_play()
+                
+           # attempts -= 1
+        break
+
+# def get_question_answers():
+
+ #   """
+ #   get questions and answers and print for player input
+ #   loop our attepmt variables
+ #   """
+ #   print("                      Can you Guess The TV Show?? \n")
+  #  score = 0
+ #   for question in questions:
+  #      attempts = 3 
+  #  while attempts > 0:
+ #       randoms = random.choice([question for question in questions.values()])
+ #       question = randoms["question"]
+ #       print(question)
+ #       question = randoms["answer"]
+ #       print("")
+ #       ans = input("Guess the Show:")
+ #       check = check_answer(question, ans, score, attempts)
+  #      if check:
+  #          score += 125
+           # continue_play()
+  #          break
+  #      attempts -= 1
+           
               
 def check_answer(question, ans, score, attempts):
     """
     Check player answer is wrong or correct, 
     print feed back 
     """  
-    if question == ans:
+    if questions[question]["answer"] == ans:
         print(f"Good job!{score + 125} ")
-        return True  
-    elif question != ans:
+        return True
+    else:
         print("Naahh! Try again..")
         return False
 
@@ -115,15 +131,18 @@ def continue_play():
     logo_page()
     scores()
     get_question_answers()
-        
+
+
 def main():
     """
     Main 
     """
-    score = 0
+
     logo_page()
     intro()
-    scores()
+   # scores()
     get_question_answers()
 
-main()    
+
+main()
+  
