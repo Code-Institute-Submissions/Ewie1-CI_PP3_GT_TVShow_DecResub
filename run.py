@@ -37,6 +37,7 @@ def intro():
     input("Press any key to begin")
     clear_screen()
     logo_page()
+    return True
     
     
 
@@ -44,7 +45,7 @@ def menu():
     """
     Give return player options to continue game
     """
-    options = "1) Game Rules\n2) Start game\n"
+    options = "1) About Game          2) Play Game\n"
     selected_option = input(options)
     print("" * 75)
 
@@ -53,13 +54,15 @@ def menu():
         selected_option = input(options)
         
     if selected_option == "1":
-        print("hello")
+        continue_play()
         
     elif selected_option == "2":
-        game_start()
-    return selected_option       
-     
+        clear_screen()
+        play_game()
         
+    return selected_option     
+     
+def       
 
 def scores(score):
     """
@@ -172,14 +175,15 @@ def continue_play():
    # scores()
    # get_question_answers()
 
-def game_start():
+def play_game():
     """"
     Start game
     """
-    print("Hello")
+    
     score = 0
     logo_page()
     scores(score)
+    print("-" * 75)
     get_question_answers()
     gameover(score)
     
@@ -192,7 +196,8 @@ def main():
     logo_page()
     intro()
     scores(score)
-    get_question_answers()
+    menu()
+   # get_question_answers()
     gameover(score)
 
 
