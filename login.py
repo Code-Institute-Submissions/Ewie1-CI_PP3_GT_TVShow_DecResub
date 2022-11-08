@@ -24,8 +24,6 @@ def get_user_name():
         print("Your name must be consist of letters only")
     
         player_name = input("Game name:")
-        # print(f"game name: {player_name}")
-    
         name_data = player_name
         if validate_name(name_data):
             print("Player name saved")
@@ -40,9 +38,7 @@ def get_user_email():
         print("Enter your email to save game or get to the next level")
         print("Your name must be consist of letters only")
     
-        player_email = input("Enter your email:")
-        # print(f"game name: {player_name}")
-    
+        player_email = input("Enter your email:")    
         email_data = player_email
         if validate_email(email_data):
             print("Player email saved")
@@ -58,14 +54,11 @@ def get_user_level():
         print("Your name must be consist of letters only")
     
         player_level = input("Game level:")
-        # print(f"game name: {player_name}")
-    
         level_data = player_level
         if validate_level(level_data):
             print("Player name saved")
             break
     return level_data
-
 
 def validate_name(name):
     """
@@ -113,7 +106,7 @@ def save_data_worksheet(data):
     name_save.append_row(data)
     print("Player saved")
 
-def user_info_list(n, e, l):
+def get_registered():
     """
     Store all user input in a list and
     add to spreadsheet
@@ -129,19 +122,30 @@ def user_info_list(n, e, l):
     new_data = [val for val in data]
     save_data_worksheet(new_data)
 
-def get_player_info(n, e, l):
+#def get_player_info(n, e, l):
     
-    play = SHEET.worksheet("player").get_all_values()
+  #  play = SHEET.worksheet("player").get_all_values()
 
-    
-    if n in play:
-        print("name")
-    elif e in play:
-        print("email")
-    elif l in play:
-        print("level")
-    else:
-        pass
-    return
+
+  #  if n in play:
+    #    print("name")
+   # elif e in play:
+   #     print("email")
+    #elif l in play:
+    #    print("level")
+    #else:
+    #    pass
+    #return
 #def main():
-get_player_info(n, e, l)
+    #user_info_list(n, e, l)
+   # get_user_name()
+   # get_user_email()
+   # get_user_level()
+   # validate_name(name)
+   # validate_email(email)
+   # validate_level(level)
+
+    #save_data_worksheet(data)
+    #user_info_list(n, e, l)
+#get_player_info(n, e, l)
+main()
