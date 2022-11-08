@@ -9,7 +9,7 @@ SCOPE = [
     ]
 
 LOGIN = Credentials.from_service_account_file("login.json")
-SCOPED_LOGIN = CREDS.with_scopes(SCOPE)
+SCOPED_LOGIN = LOGIN.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_LOGIN)
 SHEET = GSPREAD_CLIENT.open("login")
 
