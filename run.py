@@ -6,7 +6,7 @@ import sys
 import os
 from questionanswer_lev_one import questions
 from questionanswer_lev_one import answers
-import login 
+import log 
 
 
 
@@ -196,6 +196,6 @@ def main():
     gameover(score)
 
 
-#main()
+main()
 #game_start()
-menu()
+#menu()
