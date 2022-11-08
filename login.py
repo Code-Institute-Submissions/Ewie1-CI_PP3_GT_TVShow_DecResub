@@ -122,6 +122,14 @@ def get_registered():
     new_data = [val for val in data]
     save_data_worksheet(new_data)
 
+def get_player_info():
+    """
+    Get player info 
+    """    
+    get_user_name()
+    get_user_email()
+
+
 #def get_player_info(n, e, l):
     
   #  play = SHEET.worksheet("player").get_all_values()

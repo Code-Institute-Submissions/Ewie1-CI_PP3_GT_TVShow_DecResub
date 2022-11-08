@@ -62,7 +62,12 @@ def menu():
         
     return selected_option     
      
-def       
+def start_game():
+    """
+    Determine if palyer is new or Retruned
+    """
+    while True:
+        login.get_registered()     
 
 def scores(score):
     """
@@ -86,7 +91,6 @@ def scores(score):
 def gameover(score):
     """
     """
-        
     if score > 875 and score < 1000:
         print("Gameover")
         print("Try again")
@@ -201,6 +205,6 @@ def main():
     gameover(score)
 
 
-main()
-#game_start()
+#main()
+start_game()
 #menu()
