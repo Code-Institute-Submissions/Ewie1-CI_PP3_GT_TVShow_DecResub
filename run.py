@@ -6,6 +6,7 @@ import sys
 import os
 from questionanswer_lev_one import questions
 from questionanswer_lev_one import answers
+import login 
 
 
 
@@ -32,14 +33,33 @@ def intro():
     print("Welcome to Guess That TV Shows!")
     print("Test your knowledge on some of the most famous TV show!")
     print("Guess which show these top TV quotes are from?")
-    print("There are 3 levels of tests\nScore 1000 ponits to get to the next level")
+    print("There are 3 levels of tests\nScore 1000 points to get to the next level")
     input("Press any key to begin")
     clear_screen()
     logo_page()
-    return True
+    
+    
 
+def menu():
+    """
+    Give return player options to continue game
+    """
+    options = "1) Game Rules\n2) Start game\n"
+    selected_option = input(options)
+    print("" * 75)
 
-
+    while selected_option not in ("1", "2"):
+        print("You can only choose 1 or 2:")
+        selected_option = input(options)
+        
+    if selected_option == "1":
+        print("hello")
+        
+    elif selected_option == "2":
+        game_start()
+    return selected_option       
+     
+        
 
 def scores(score):
     """
@@ -47,9 +67,9 @@ def scores(score):
     """
 
     if score >= 1000:
-        print("Run level 1")
+        print("-" * 75)
+        login.get_registered()
         continue_play()
-         
         return True
     elif score >= 1000:
         print("Run level 2")
@@ -58,7 +78,7 @@ def scores(score):
     elif score == 3000:
         print("End/Restart game")
     else:
-        print("end game")
+        pass
 
 def gameover(score):
     """
@@ -132,12 +152,16 @@ def check_answer(question, ans, score, attempts):
     print feed back 
     """  
     if questions[question]["answer"] == ans:
-        print(f"Good job!{score + 125} ")
-        
+        print(f"Good job!{score + 125} \n")
         return True
     else:
         print("Naahh! Try again..")
         return False
+
+#def get_question_level_two():
+
+
+#def check_answer_level_two():    
 
 def continue_play():
     """
@@ -147,6 +171,18 @@ def continue_play():
     logo_page()
    # scores()
    # get_question_answers()
+
+def game_start():
+    """"
+    Start game
+    """
+    print("Hello")
+    score = 0
+    logo_page()
+    scores(score)
+    get_question_answers()
+    gameover(score)
+    
 
 def main():
     """
@@ -160,5 +196,6 @@ def main():
     gameover(score)
 
 
-main()
-  
+#main()
+#game_start()
+menu()

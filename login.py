@@ -148,4 +148,3 @@ def get_registered():
     #save_data_worksheet(data)
     #user_info_list(n, e, l)
 #get_player_info(n, e, l)
-main()
