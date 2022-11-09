@@ -58,7 +58,9 @@ def menu():
         
     elif selected_option == "2":
         clear_screen()
-        play_game()
+        logo_page()
+        print("-" * 75)
+        start_game()
         
     return selected_option     
      
@@ -66,8 +68,21 @@ def start_game():
     """
     Determine if palyer is new or Retruned
     """
-    while True:
-        login.get_registered()     
+    new_player = "1) I am a new player      2) Log me in\n"
+    player_selection = input(new_player)
+
+    while player_selection not in ("1", "2"):
+        print("You can only choose 1 or 2:")
+        player_selection = input(new_player)
+
+    if player_selection == "1":
+        play_game()
+    
+    elif player_selection == "2":
+        login.get_registered()    
+
+    return player_selection
+         
 
 def scores(score):
     """
@@ -201,10 +216,11 @@ def main():
     intro()
     scores(score)
     menu()
+
    # get_question_answers()
     gameover(score)
 
 
-#main()
-start_game()
+main()
+#start_game()
 #menu()
