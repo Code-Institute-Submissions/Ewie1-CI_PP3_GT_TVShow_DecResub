@@ -40,7 +40,7 @@ def get_user_email():
     
         player_email = input("Enter your email:")    
         email_data = player_email
-        if validate_email(email_data):
+        if val_email(email_data):
             print("Player email saved")
             break
     return email_data
@@ -72,14 +72,14 @@ def validate_name(name):
         return False
     return True
 
-def validate_email(email):
+def val_email(email):
     """
     Validate player name
     """
     try:
-        if len(email) != 5:
-            raise ValueError(f"Your name must be consisted of 5 digits, you provided {len(email)}")
-    except ValueError as e:
+        validate_email(email)
+        return True    
+    except EmailNotValidError as e:
         print(f"Invalid data: {e}, Please try again.\n")
         return False
     return True

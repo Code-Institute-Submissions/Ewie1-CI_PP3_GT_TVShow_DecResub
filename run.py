@@ -180,8 +180,26 @@ def check_answer(question, ans, score, attempts):
         print("Naahh! Try again..")
         return False
 
-#def get_question_level_two():
 
+def get_question_level_two():
+    """
+    Test function
+    """
+    while True:
+        score = 1000
+
+        for question in questions:
+            attempts = 3
+        #    while attempts > 0:
+            print(questions[question][""])
+            ans = input("Enter Show:")
+            check = check_answer(question, ans, score, attempts)
+            if check:
+                score += 125
+                scores(score)
+                gameover(score)
+           # attempts -= 1
+        break
 
 #def check_answer_level_two():    
 
