@@ -122,28 +122,30 @@ def get_registered():
     new_data = [val for val in data]
     save_data_worksheet(new_data)
 
-def get_player_info():
+def validate_return_player():
     """
-    Get player info 
+    Get player info, validate 
     """    
-    get_user_name()
-    get_user_email()
-
-
-#def get_player_info(n, e, l):
     
-  #  play = SHEET.worksheet("player").get_all_values()
+    info = []
+    n = get_user_name()
+    e = get_user_email()
+    l = get_user_level()
 
+    info.append(n)
+    info.append(e)
+    info.append(l)
 
-  #  if n in play:
-    #    print("name")
-   # elif e in play:
-   #     print("email")
-    #elif l in play:
-    #    print("level")
-    #else:
-    #    pass
-    #return
+    player_data = SHEET.worksheet("player").get_all_values()
+
+    if info in player_data:
+        print("logged in")
+    else:
+        print("Your login infermation does not match")
+        print("Please check your player name and email")
+        print("Try again")
+        validate_return_player()
+
 #def main():
     #user_info_list(n, e, l)
    # get_user_name()
