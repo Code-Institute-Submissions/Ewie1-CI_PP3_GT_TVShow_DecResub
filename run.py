@@ -79,7 +79,7 @@ def start_game():
         play_game()
     
     elif player_selection == "2":
-        login.get_registered()    
+        login.validate_return_player()    
 
     return player_selection
          

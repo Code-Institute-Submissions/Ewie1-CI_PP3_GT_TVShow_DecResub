@@ -139,7 +139,7 @@ def validate_return_player():
     player_data = SHEET.worksheet("player").get_all_values()
 
     if info in player_data:
-        print("logged in")
+        print(f"Wecome back {n}!")
     else:
         print("Your login infermation does not match")
         print("Please check your player name and email")
