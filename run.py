@@ -81,7 +81,8 @@ def start_game():
         play_game()
     
     elif player_selection == "2":
-        login.validate_return_player()    
+        login.validate_return_player()
+        return_player_access()    
 
     return player_selection
          
@@ -234,6 +235,22 @@ def return_player_access():
     """
     Give access
     """
+    new_player = "Choose your start level\n1) Level 1      2) Level 2\n"
+    player_selection = input(new_player)
+
+
+    while player_selection not in ("1", "2"):
+        print("You can only choose 1 or 2:")
+        player_selection = input(new_player)
+
+    if player_selection == "1":
+        get_question_answers()
+    
+    elif player_selection == "2":
+        get_level_two()    
+
+    return player_selection
+    
 
 
 def continue_play():
