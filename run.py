@@ -204,7 +204,10 @@ def check_answer(question, ans, score, attempts):
         print(f"Good job!{score + 125} \n")
         print("level 2")
         return True
-    
+    elif level_three[question]["answer"] == ans:
+        print(f"Good job!{score + 125} \n")
+        print("level 3")
+        return True
     else:
         print("Naahh! Try again..")
         return False
