@@ -96,13 +96,9 @@ def scores(score):
         login.get_registered()
         get_level_two()
     elif score == 2000:
-        
-
-        
-    elif score >= 2000:
-        print("Run level 3")
+        get_level_three()
     elif score == 3000:
-        print("End/Restart game")
+        print("You have won my game!\n Congratulations!")
     else:
         pass
 
