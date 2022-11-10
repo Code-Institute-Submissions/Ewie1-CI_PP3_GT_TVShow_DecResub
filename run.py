@@ -229,7 +229,13 @@ def check_answer(question, ans, score, attempts):
     else:
         print("Naahh! Try again..")
         return False
- 
+
+def return_player_access():
+    """
+    Give access
+    """
+
+
 def continue_play():
     """
     Run function to contniue play
