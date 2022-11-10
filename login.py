@@ -27,7 +27,7 @@ def get_user_name():
         player_name = input("Game name:")
         name_data = player_name
         if validate_name(name_data):
-            print("Player name saved")
+            print("Thankyou")
             break
     return name_data
 
@@ -42,7 +42,7 @@ def get_user_email():
         player_email = input("Enter your email:")    
         email_data = player_email
         if val_email(email_data):
-            print("Player email saved")
+            print("Thankyou")
             break
     return email_data
 
@@ -57,7 +57,7 @@ def get_user_level():
         player_level = input("Game level:")
         level_data = player_level
         if validate_level(level_data):
-            print("Player name saved")
+            print("Thankyou")
             break
     return level_data
 

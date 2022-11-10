@@ -90,7 +90,6 @@ def scores(score):
     """
     Use score count to determine game levels
     """
-
     if score == 1000:
         print("-" * 75)
         login.get_registered()
@@ -267,6 +266,6 @@ def main():
     gameover(score)
 
 
-#main()
+main()
 #start_game()
-get_level_two()
+#get_level_two()
