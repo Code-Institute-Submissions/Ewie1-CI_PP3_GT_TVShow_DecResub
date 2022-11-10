@@ -5,7 +5,9 @@ import random
 import sys
 import os
 from questionanswer_lev_one import questions
-from questionanswer_lev_one import answers
+#from questionanswer_lev_one import answers
+from questionanswer_lev_one import level_two
+from questionanswer_lev_one import level_three
 import login 
 
 
@@ -89,7 +91,7 @@ def scores(score):
     Use score count to determine game levels
     """
 
-    if score >= 1000:
+    if score == 1000:
         print("-" * 75)
         login.get_registered()
         continue_play()
@@ -143,6 +145,28 @@ def get_question_answers():
            # attempts -= 1
         break
 
+def get_level_two():
+    """
+    Test function
+    """
+    print("level 2\n")
+    print("-" * 75)
+    while True:
+        score = 1000
+
+        for question in level_two:
+            attempts = 3
+        #    while attempts > 0:
+            print(level_two[question]["question"])
+            ans = input("Enter Show:")
+            check = check_answer(question, ans, score, attempts)
+            if check:
+                score += 125
+                scores(score)
+                gameover(score)
+           # attempts -= 1
+        break
+
 # def get_question_answers():
 
  #   """
@@ -176,6 +200,11 @@ def check_answer(question, ans, score, attempts):
     if questions[question]["answer"] == ans:
         print(f"Good job!{score + 125} \n")
         return True
+    elif level_two[question]["answer"] == ans:
+        print(f"Good job!{score + 125} \n")
+        print("level 2")
+        return True
+    
     else:
         print("Naahh! Try again..")
         return False
@@ -239,6 +268,6 @@ def main():
     gameover(score)
 
 
-main()
+#main()
 #start_game()
-#menu()
+get_level_two()

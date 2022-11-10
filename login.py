@@ -146,7 +146,7 @@ def validate_return_player():
         print("Please check your player name and email")
         print("Try again")
         validate_return_player()
-get_registered()
+
 #def main():
     #user_info_list(n, e, l)
    # get_user_name()
