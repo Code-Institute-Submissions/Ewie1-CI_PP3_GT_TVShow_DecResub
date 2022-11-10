@@ -94,10 +94,11 @@ def scores(score):
     if score == 1000:
         print("-" * 75)
         login.get_registered()
-        continue_play()
-        return True
-    elif score >= 1000:
-        print("Run level 2")
+        get_level_two()
+    elif score == 2000:
+        
+
+        
     elif score >= 2000:
         print("Run level 3")
     elif score == 3000:
@@ -167,6 +168,28 @@ def get_level_two():
            # attempts -= 1
         break
 
+def get_level_three():
+    """
+    Test function
+    """
+    print("level 3\n")
+    print("-" * 75)
+    while True:
+        score = 2000
+
+        for question in level_three:
+            attempts = 3
+        #    while attempts > 0:
+            print(level_three[question]["question"])
+            ans = input("Enter Show:")
+            check = check_answer(question, ans, score, attempts)
+            if check:
+                score += 125
+                scores(score)
+                gameover(score)
+           # attempts -= 1
+        break
+
 # def get_question_answers():
 
  #   """
@@ -211,30 +234,7 @@ def check_answer(question, ans, score, attempts):
     else:
         print("Naahh! Try again..")
         return False
-
-
-def get_question_level_two():
-    """
-    Test function
-    """
-    while True:
-        score = 1000
-
-        for question in questions:
-            attempts = 3
-        #    while attempts > 0:
-            print(questions[question][""])
-            ans = input("Enter Show:")
-            check = check_answer(question, ans, score, attempts)
-            if check:
-                score += 125
-                scores(score)
-                gameover(score)
-           # attempts -= 1
-        break
-
-#def check_answer_level_two():    
-
+ 
 def continue_play():
     """
     Run function to contniue play
