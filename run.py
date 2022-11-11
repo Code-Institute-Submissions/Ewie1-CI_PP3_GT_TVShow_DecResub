@@ -188,9 +188,7 @@ def get_level_three():
            # attempts -= 1
         break
 
-
            
-              
 def check_answer(question, ans, score, attempts):
     """
     Check player answer is wrong or correct, 
@@ -237,10 +235,7 @@ def continue_play():
     """
     Run function to contniue play
     """
-   # clear_screen()
     logo_page()
-   # scores()
-   # get_question_answers()
 
 def play_game():
     """"
@@ -265,8 +260,6 @@ def main():
     scores(score)
     menu()
 
-   # get_question_answers()
-    gameover(score)
 
 def end_game():
     for question, i in enumerate(questions):
