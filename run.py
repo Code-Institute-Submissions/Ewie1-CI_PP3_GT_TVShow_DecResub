@@ -90,18 +90,19 @@ def scores(score):
     """
     Use score count to determine game levels
     """
-    if score == 1000:
-        print("-" * 75)
-        login.get_registered()
-        get_level_two()
-    elif score == 2000:
-        get_level_three()
-    elif score == 3000:
-        print("You have won my game!\n Congratulations!")
-    elif score < 1000 and len(questions) - 1:
-        print("Hello")
-    else:    
-        pass
+    for question in questions:
+        if score == 1000:
+            print("-" * 75)
+            login.get_registered()
+            get_level_two()
+        elif score == 2000:
+            get_level_three()
+        elif score == 3000:
+            print("You have won my game!\n Congratulations!")
+        elif score < 1000 or end_game():
+            print("Hello")
+        else:    
+            end_game()
 
 def gameover(score):
     """
@@ -290,11 +291,12 @@ def main():
     gameover(score)
 
 def end_game():
-    for question in questions:
-        print(question)
-        if question == 2:
-            print("Hello")
-            break
+    for question, i in enumerate(questions):
+        
+        quest = len(questions)
+        print(quest[-1])
+            
+            
         
 end_game()
 
