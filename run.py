@@ -23,7 +23,8 @@ def logo_page():
     print("\    \_\  \|    | /_____/ |    |    \     / /        |   Y  (  <_> \     / ")
     print(" \______  /|____|         |____|     \___/ /_______  |___|  /\____/ \/\_/  ")
     print("        \/                                         \/     \/               ")
-    print("-" *75)
+    print("-" * 75)
+    print("-" * 75)
 
 
 def intro():
@@ -33,8 +34,6 @@ def intro():
     """
     print("Welcome to Guess That TV Shows!")
     print("Test your knowledge on some of the most famous TV show!")
-    print("Guess which show these top TV quotes are from?")
-    print("There are 3 levels of tests\nScore 1000 points to get to the next level")
     input("Press any key to begin")
     clear_screen()
     logo_page()
@@ -52,10 +51,12 @@ def menu():
 
     while selected_option not in ("1", "2"):
         print("You can only choose 1 or 2:")
+        clear_screen()
+        logo_page()
         selected_option = input(options)
         
     if selected_option == "1":
-        continue_play()
+        about_game()
         
     elif selected_option == "2":
         clear_screen()
@@ -74,6 +75,8 @@ def start_game():
 
     while player_selection not in ("1", "2"):
         print("You can only choose 1 or 2:")
+        clear_screen()
+        logo_page()
         player_selection = input(new_player)
 
     if player_selection == "1":
@@ -85,6 +88,24 @@ def start_game():
 
     return player_selection
          
+def about_game():
+    """
+    Decscribe how game is played 
+    Return to intro page
+    """
+
+    print("Guess which show these top TV quotes are from?")
+    print("One right answer gives you 125 point and no ponits for wrong answers")
+    print("There are 3 levels of tests\nScore 1000 points to get to the next level")
+    print("Each level may ask more questions ans it gets a bit trickier")
+    print("After completing the first level yu can save your player info")
+    print("Logging in will allow you to skip level 1 when you return to the game")
+    input("Press any key to get back to the Home Screen")
+    clear_screen()
+    logo_page()
+    menu()
+    return True
+
 
 def scores(score):
     """
@@ -99,10 +120,10 @@ def scores(score):
             get_level_three()
         elif score == 3000:
             print("You have won my game!\n Congratulations!")
-        elif score < 1000 or end_game():
-            print("Hello")
+        #elif score < 1000 or end_game():
+            #print("Hello")
         else:    
-            end_game()
+            pass
 
 def gameover(score):
     """
