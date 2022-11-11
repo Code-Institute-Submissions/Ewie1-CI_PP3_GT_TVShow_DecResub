@@ -1,6 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
-from email_validator import validate_email
+#from email_validator import validate_email, EmailNotValidError
 
 
 SCOPE = [
@@ -80,7 +80,7 @@ def val_email(email):
     try:
         validate_email(email)
         return True    
-    except ValueError as e:
+    except EmailNotValidError as e:
         print(f"Invalid data: {e}, Please try again.\n")
         return False
     return True
