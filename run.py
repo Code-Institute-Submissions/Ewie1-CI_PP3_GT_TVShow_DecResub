@@ -65,7 +65,25 @@ def menu():
         start_game()
         
     return selected_option     
-     
+
+def about_game():
+    """
+    Decscribe how game is played 
+    Return to intro page
+    """
+
+    print("Guess which show these top TV quotes are from?")
+    print("One right answer gives you 125 point and no ponits for wrong answers")
+    print("There are 3 levels of tests\nScore 1000 points to get to the next level")
+    print("Each level may ask more questions ans it gets a bit trickier")
+    print("After completing the first level yu can save your player info")
+    print("Logging in will allow you to skip level 1 when you return to the game")
+    input("Press any key to get back to the Home Screen")
+    clear_screen()
+    logo_page()
+    menu()
+    return True
+
 def start_game():
     """
     Determine if palyer is new or Retruned
@@ -88,23 +106,7 @@ def start_game():
 
     return player_selection
          
-def about_game():
-    """
-    Decscribe how game is played 
-    Return to intro page
-    """
 
-    print("Guess which show these top TV quotes are from?")
-    print("One right answer gives you 125 point and no ponits for wrong answers")
-    print("There are 3 levels of tests\nScore 1000 points to get to the next level")
-    print("Each level may ask more questions ans it gets a bit trickier")
-    print("After completing the first level yu can save your player info")
-    print("Logging in will allow you to skip level 1 when you return to the game")
-    input("Press any key to get back to the Home Screen")
-    clear_screen()
-    logo_page()
-    menu()
-    return True
 
 
 def scores(score):
