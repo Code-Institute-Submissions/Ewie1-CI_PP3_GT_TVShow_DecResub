@@ -147,15 +147,4 @@ def validate_return_player():
         print("Try again")
         validate_return_player()
 
-#def main():
-    #user_info_list(n, e, l)
-   # get_user_name()
-   # get_user_email()
-   # get_user_level()
-   # validate_name(name)
-   # validate_email(email)
-   # validate_level(level)
 
-    #save_data_worksheet(data)
-    #user_info_list(n, e, l)
-#get_player_info(n, e, l)
