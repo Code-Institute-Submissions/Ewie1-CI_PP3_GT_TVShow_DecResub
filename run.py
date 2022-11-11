@@ -4,6 +4,7 @@
 import random
 import sys
 import os
+from colors import Color as Col
 from questionanswer_lev_one import questions
 from questionanswer_lev_one import level_two
 from questionanswer_lev_one import level_three
@@ -47,12 +48,10 @@ def menu():
     """
     options = "1) About Game          2) Play Game\n"
     selected_option = input(options)
-    print("" * 75)
+    
 
     while selected_option not in ("1", "2"):
-        print("You can only choose 1 or 2:")
-        clear_screen()
-        logo_page()
+        print(Col.WARNING + "You can only choose 1 or 2:")
         selected_option = input(options)
         
     if selected_option == "1":
