@@ -53,7 +53,7 @@ def menu():
     Give return player options to continue game
     """
 
-    Print("Let's get going\n")
+    print("Pick a choice from the Menu\n")
     options = "1. About Game          2. Play Game\n"
     selected_option = input(options)
     

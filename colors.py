@@ -7,3 +7,4 @@ class Color:
     FAIL = '\033[91m'
     Green = "\033[32m"
     Blue = "\033[34m"
+    Head_y = "\x1b[43m"
