@@ -4,6 +4,8 @@
 import random
 import sys
 import os
+import time
+from time import sleep
 from colors import Color as Col
 from questionanswer_lev_one import questions
 from questionanswer_lev_one import level_two
@@ -18,14 +20,15 @@ def logo_page():
     print game logo and name
     """
 
-    print( "  __________________    ______________   ____________.__  "  )               
-    print(" /  _____\__    ___/    \__    ___\   \ /   /   _____|  |__   ______  _  __")
-    print("/   \  ___ |    |  ______ |    |   \   Y   /\_____  \|  |  \ /  _ \ \/ \/ /")
-    print("\    \_\  \|    | /_____/ |    |    \     / /        |   Y  (  <_> \     / ")
-    print(" \______  /|____|         |____|     \___/ /_______  |___|  /\____/ \/\_/  ")
-    print("        \/                                         \/     \/               ")
-    print("-" * 75)
-    print("-" * 75)
+    print(Col.OKGREEN + "  __________________    ______________   ____________.__  "  )               
+    print(Col.Green + " /  _____\__    ___/    \__    ___\   \ /   /   _____|  |__   ______  _  __")
+    print(Col.OKGREEN + "/   \  ___ |    |  ______ |    |   \   Y   /\_____  \|  |  \ /  _ \ \/ \/ /")
+    print(Col.Blue + "\    \_\  \|    | /_____/ |    |    \     / /        |   Y  (  <_> \     / ")
+    print(Col.OKGREEN + " \______  /|____|         |____|     \___/ /_______  |___|  /\____/ \/\_/  ")
+    print(Col.Green + "        \/                                         \/     \/               ")
+    print(Col.OKGREEN + "-" * 75)
+    print(Col.Green + "-" * 75)
+    print("")
 
 
 def intro():
@@ -33,8 +36,11 @@ def intro():
     Print game intro
     input any key to start game
     """
+    time.sleep(1)
     print("Welcome to Guess That TV Shows!")
+    time.sleep(1)
     print("Test your knowledge on some of the most famous TV show!")
+    time.sleep(1)
     input("Press any key to begin")
     clear_screen()
     logo_page()
@@ -46,7 +52,9 @@ def menu():
     """
     Give return player options to continue game
     """
-    options = "1) About Game          2) Play Game\n"
+
+    Print("Let's get going\n")
+    options = "1. About Game          2. Play Game\n"
     selected_option = input(options)
     
 
