@@ -188,29 +188,7 @@ def get_level_three():
            # attempts -= 1
         break
 
-# def get_question_answers():
 
- #   """
- #   get questions and answers and print for player input
- #   loop our attepmt variables
- #   """
- #   print("                      Can you Guess The TV Show?? \n")
-  #  score = 0
- #   for question in questions:
-  #      attempts = 3 
-  #  while attempts > 0:
- #       randoms = random.choice([question for question in questions.values()])
- #       question = randoms["question"]
- #       print(question)
- #       question = randoms["answer"]
- #       print("")
- #       ans = input("Guess the Show:")
- #       check = check_answer(question, ans, score, attempts)
-  #      if check:
-  #          score += 125
-           # continue_play()
-  #          break
-  #      attempts -= 1
            
               
 def check_answer(question, ans, score, attempts):
