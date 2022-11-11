@@ -5,7 +5,6 @@ import random
 import sys
 import os
 from questionanswer_lev_one import questions
-#from questionanswer_lev_one import answers
 from questionanswer_lev_one import level_two
 from questionanswer_lev_one import level_three
 import login 
@@ -99,7 +98,9 @@ def scores(score):
         get_level_three()
     elif score == 3000:
         print("You have won my game!\n Congratulations!")
-    else:
+    elif score < 1000 and len(questions) - 1:
+        print("Hello")
+    else:    
         pass
 
 def gameover(score):
@@ -288,7 +289,15 @@ def main():
    # get_question_answers()
     gameover(score)
 
+def end_game():
+    for question in questions:
+        print(question)
+        if question == 2:
+            print("Hello")
+            break
+        
+end_game()
 
-main()
+#main()
 #start_game()
 #get_level_two()
