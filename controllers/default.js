@@ -49,9 +49,9 @@ function socket() {
     });
 }
 
-if (process.env.CREDS != null) {
-    console.log("Creating creds.json file.");
-    fs.writeFile('creds.json', process.env.CREDS, 'utf8', function (err) {
+if (process.env.LOGIN != null) {
+    console.log("Creating login.json file.");
+    fs.writeFile('login.json', process.env.LOGIN, 'utf8', function (err) {
         if (err) {
             console.log('Error writing file: ', err);
             socket.emit("console_output", "Error saving credentials: " + err);
