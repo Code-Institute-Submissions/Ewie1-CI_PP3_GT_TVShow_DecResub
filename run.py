@@ -298,8 +298,8 @@ def end_game():
             
             
         
-end_game()
+#end_game()
 
-#main()
+main()
 #start_game()
 #get_level_two()
