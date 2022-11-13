@@ -54,7 +54,7 @@ level_two = {
 
     3 : {
         "question" : "Jon Snow, Samwell Tarly",
-        "answer" : "Game of Thrones"
+        "answer" : "game of thrones"
     },
 
     4 : {
@@ -74,7 +74,7 @@ level_two = {
 
     7 : {
         "question" : "Monica Geller, Joey Tribiani, Phoebe Buffay",
-        "answer" : "Friends"
+        "answer" : "friends"
     },
 
     8 : {
