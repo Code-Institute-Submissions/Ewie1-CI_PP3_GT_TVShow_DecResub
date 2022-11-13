@@ -36,7 +36,7 @@ def intro():
     Print game intro
     input any key to start game
     """
-    time.sleep(1)
+    time.sleep(0.5)
     print("Welcome to Guess That TV Shows!")
     time.sleep(1)
     print("Test your knowledge on some of the most famous TV show!")
@@ -50,13 +50,15 @@ def menu():
     """
     Give return player options to continue game
     """
-    print(Col.Blue + "Pick a choice from the Menu\n")
+    time.sleep(0.5)
+    print(Col.Blue + "Pick a choice from the Menu")
+    time.sleep(0.5)
     options = "1. About Game          2. Play Game\n"
     selected_option = input(options)
     
 
     while selected_option not in ("1", "2"):
-        print(Col.WARNING + "You can only choose 1 or 2:")
+        print(Col.RED + "You can only choose 1 or 2:")
         selected_option = input(options)
         
     if selected_option == "1":
@@ -92,7 +94,9 @@ def start_game():
     """
     Determine if palyer is new or Retruned
     """
+    time.sleep(0.5)
     print(Col.Blue + "Are you new to this game?")
+    time.sleep(0.5)
     new_player = "1) I am a new player      2) Log me in\n"
     player_selection = input(new_player)
 
@@ -100,9 +104,11 @@ def start_game():
         print("You can only choose 1 or 2:")
         clear_screen()
         logo_page()
+        time.sleep(1)
         player_selection = input(new_player)
 
     if player_selection == "1":
+        clear_screen()
         play_game()
     
     elif player_selection == "2":
@@ -220,18 +226,18 @@ def check_answer(question, ans, score, attempts):
     print feed back 
     """  
     if questions[question]["answer"] == ans:
-        print(f"Good job!{score + 125} \n")
+        print(Col.OKGREEN + f"Good job!{score + 125} \n")
         return True
     elif level_two[question]["answer"] == ans:
-        print(f"Good job!{score + 125} \n")
+        print(Col.OKGREEN + f"Good job!{score + 125} \n")
         print("level 2")
         return True
     elif level_three[question]["answer"] == ans:
-        print(f"Good job!{score + 125} \n")
+        print(Col.OKGREEN + f"Good job!{score + 125} \n")
         print("level 3")
         return True
     else:
-        print("Naahh! Try again..")
+        print(Col.FAIL + "Sorry wrong answer, Try again..")
         return False
 
 def return_player_access():
@@ -247,6 +253,7 @@ def return_player_access():
         player_selection = input(new_player)
 
     if player_selection == "1":
+        clear_screen()
         get_question_answers()
     
     elif player_selection == "2":
@@ -270,7 +277,6 @@ def play_game():
     score = 0
     logo_page()
     scores(score)
-    print("-" * 75)
     get_question_answers()
     gameover(score)
     
