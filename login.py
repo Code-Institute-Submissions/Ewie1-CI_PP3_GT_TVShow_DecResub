@@ -140,7 +140,7 @@ def validate_return_player():
     if info in player_data:
         print("Checking login information...")
         time.sleep(1)
-        print(f"Wecome back {n}!")
+        print(Col.Green + f"Wecome back {n}!")
     else:
         print("Checking login information...")
         time.sleep(1.5)

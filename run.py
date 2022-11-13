@@ -113,10 +113,37 @@ def start_game():
     
     elif player_selection == "2":
         login.validate_return_player()
+        clear_screen()
+        logo_page()
         return_player_access()    
 
     return player_selection
-         
+
+def return_player_access():
+    """
+    Give access
+    """
+
+    print(Col.Blue + "Choose Level")
+    new_player = "Level 1       Level 2\n"
+    player_selection = input(new_player)
+
+
+    while player_selection not in ("1", "2"):
+        print("You can only choose 1 or 2:")
+        player_selection = input(new_player)
+
+    if player_selection == "1":
+        clear_screen()
+        get_question_answers()
+    
+    elif player_selection == "2":
+        clear_screen()
+        logo_page()
+        get_level_two()    
+
+    return player_selection
+    
 def scores(score):
     """
     Use score count to determine game levels
@@ -129,8 +156,12 @@ def scores(score):
             clear_screen()
             get_level_two()
         elif score == 2000:
+            print(Col.Green + "Yaay!!! You cleared Level 2!")
+            time.sleep(1)
             get_level_three()
         elif score == 3000:
+            print(Col.Green + "Yaay!!! You cleared Level 3!")
+            time.sleep(1)
             print("You have won my game!\n Congratulations!")
         #elif score < 1000 or end_game():
             #print("Hello")
@@ -242,27 +273,6 @@ def check_answer(question, ans, score, attempts):
         print(Col.FAIL + "Sorry wrong answer, Try again..")
         return False
 
-def return_player_access():
-    """
-    Give access
-    """
-    new_player = "Choose your start level\n1) Level 1      2) Level 2\n"
-    player_selection = input(new_player)
-
-
-    while player_selection not in ("1", "2"):
-        print("You can only choose 1 or 2:")
-        player_selection = input(new_player)
-
-    if player_selection == "1":
-        clear_screen()
-        get_question_answers()
-    
-    elif player_selection == "2":
-        get_level_two()    
-
-    return player_selection
-    
 
 
 def continue_play():
