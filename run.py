@@ -20,12 +20,12 @@ def logo_page():
     print game logo and name
     """
 
-    print(Col.OKGREEN + "  __________________    ______________   ____________.__  "  )               
-    print(Col.Green + " /  _____\__    ___/    \__    ___\   \ /   /   _____|  |__   ______  _  __")
+    print(Col.YELLOW + "  __________________    ______________   ____________.__  "  )               
+    print(Col.YELLOW + " /  _____\__    ___/    \__    ___\   \ /   /   _____|  |__   ______  _  __")
     print(Col.OKGREEN + "/   \  ___ |    |  ______ |    |   \   Y   /\_____  \|  |  \ /  _ \ \/ \/ /")
-    print(Col.Blue + "\    \_\  \|    | /_____/ |    |    \     / /        |   Y  (  <_> \     / ")
-    print(Col.OKGREEN + " \______  /|____|         |____|     \___/ /_______  |___|  /\____/ \/\_/  ")
-    print(Col.Green + "        \/                                         \/     \/               ")
+    print(Col.OKGREEN + "\    \_\  \|    | /_____/ |    |    \     / /        |   Y  (  <_> \     / ")
+    print(Col.YELLOW + " \______  /|____|         |____|     \___/ /_______  |___|  /\____/ \/\_/  ")
+    print(Col.YELLOW + "        \/                                         \/     \/               ")
     print(Col.OKGREEN + "-" * 75)
     print(Col.Green + "-" * 75)
     print("")
@@ -41,18 +41,15 @@ def intro():
     time.sleep(1)
     print("Test your knowledge on some of the most famous TV show!")
     time.sleep(1)
-    input("Press any key to begin")
+    input(Col.Blue + "Press any key to begin")
     clear_screen()
     logo_page()
     return True
     
-    
-
 def menu():
     """
     Give return player options to continue game
     """
-
     print("Pick a choice from the Menu\n")
     options = "1. About Game          2. Play Game\n"
     selected_option = input(options)
@@ -63,6 +60,8 @@ def menu():
         selected_option = input(options)
         
     if selected_option == "1":
+        clear_screen()
+        logo_page()
         about_game()
         
     elif selected_option == "2":
@@ -78,13 +77,13 @@ def about_game():
     Decscribe how game is played 
     Return to intro page
     """
-    print("Guess which show these top TV quotes are from?")
+    print(Col.Blue + "Guess which show these top TV quotes are from?")
     print("One right answer gives you 125 point and no ponits for wrong answers")
     print("There are 3 levels of tests\nScore 1000 points to get to the next level")
     print("Each level may ask more questions ans it gets a bit trickier")
     print("After completing the first level yu can save your player info")
     print("Logging in will allow you to skip level 1 when you return to the game")
-    input("Press any key to get back to the Home Screen")
+    input(Col.Blue + "Press any key to get back to the Home Screen")
     clear_screen()
     logo_page()
     menu()
@@ -161,7 +160,7 @@ def get_question_answers():
             attempts = 3
         #    while attempts > 0:
             print(questions[question]["question"])
-            ans = input("Enter Show:")
+            ans = input(Col.Green + "Enter Show:")
             check = check_answer(question, ans, score, attempts)
             if check:
                 score += 125
