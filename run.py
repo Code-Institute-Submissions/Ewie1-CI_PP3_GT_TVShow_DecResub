@@ -277,6 +277,7 @@ def play_game():
     score = 0
     logo_page()
     scores(score)
+    time.sleep(1)
     get_question_answers()
     gameover(score)
     
