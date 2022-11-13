@@ -99,7 +99,8 @@ def save_data_worksheet(data):
     """
     Update player information to worksheet
     """
-    print("Saving name...")
+    print("Saving...")
+    time.sleep(1.5)
     name_save = SHEET.worksheet("player")
     name_save.append_row(data)
     print("Player saved")

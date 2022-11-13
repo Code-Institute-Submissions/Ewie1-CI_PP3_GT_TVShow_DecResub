@@ -123,8 +123,10 @@ def scores(score):
     """
     for question in questions:
         if score == 1000:
-            print("-" * 75)
+            print(Col.Green + "Yaay!!! You cleared Level 1!")
+            print(Col.Green + "Register and move on to the next Level")
             login.get_registered()
+            clear_screen()
             get_level_two()
         elif score == 2000:
             get_level_three()
