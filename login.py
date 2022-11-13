@@ -22,7 +22,7 @@ def get_user_name():
     get player name
     """
     while True:    
-        print("Enter game name to save game")
+        print("Enter your game name")
     
         player_name = input(Col.Blue + "Game name:")
         name_data = player_name
