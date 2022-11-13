@@ -50,7 +50,7 @@ def menu():
     """
     Give return player options to continue game
     """
-    print("Pick a choice from the Menu\n")
+    print(Col.Blue + "Pick a choice from the Menu\n")
     options = "1. About Game          2. Play Game\n"
     selected_option = input(options)
     
@@ -67,7 +67,6 @@ def menu():
     elif selected_option == "2":
         clear_screen()
         logo_page()
-        print("-" * 75)
         start_game()
         
     return selected_option     
@@ -77,7 +76,7 @@ def about_game():
     Decscribe how game is played 
     Return to intro page
     """
-    print(Col.Blue + "Guess which show these top TV quotes are from?")
+    print("Guess which show these top TV quotes are from?")
     print("One right answer gives you 125 point and no ponits for wrong answers")
     print("There are 3 levels of tests\nScore 1000 points to get to the next level")
     print("Each level may ask more questions ans it gets a bit trickier")
@@ -93,6 +92,7 @@ def start_game():
     """
     Determine if palyer is new or Retruned
     """
+    print(Col.Blue + "Are you new to this game?")
     new_player = "1) I am a new player      2) Log me in\n"
     player_selection = input(new_player)
 
