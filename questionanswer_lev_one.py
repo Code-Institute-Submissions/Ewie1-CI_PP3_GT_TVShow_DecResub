@@ -86,7 +86,7 @@ level_two = {
 
 level_three = {
     1 : {
-        "question" : "Hi, I'm Chandler. I make jokes when I'm uncomfortable",
+        "question" : "In which language is the original version of Squid Game?",
         "answer" : "Friends"
     },
 
