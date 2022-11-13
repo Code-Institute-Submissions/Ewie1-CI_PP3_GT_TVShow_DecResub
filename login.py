@@ -1,7 +1,8 @@
 import gspread
 from google.oauth2.service_account import Credentials
 from email_validator import validate_email, EmailNotValidError
-
+from colors import Color as Col
+import time
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -21,10 +22,9 @@ def get_user_name():
     get player name
     """
     while True:    
-        print("Enter game name to save game or get to the next level")
-        print("Your name must be consist of letters only")
+        print("Enter game name to save game")
     
-        player_name = input("Game name:")
+        player_name = input(Col.Blue + "Game name:")
         name_data = player_name
         if validate_name(name_data):
             print("Thankyou")
@@ -36,10 +36,9 @@ def get_user_email():
     get player email
     """
     while True:    
-        print("Enter your email to save game or get to the next level")
-        print("Your name must be consist of letters only")
-    
-        player_email = input("Enter your email:")    
+        print("Enter your email")
+        
+        player_email = input(Col.Blue + "Enter your email:")    
         email_data = player_email
         if val_email(email_data):
             print("Thankyou")
@@ -51,10 +50,8 @@ def get_user_level():
     get player level
     """
     while True:    
-        print("Enter game level to save game or get to the next level")
-        print("Your name must be consist of letters only")
-    
-        player_level = input("Game level:")
+        print("Enter game level")
+        player_level = input(Col.Blue + "Game level:")
         level_data = player_level
         if validate_level(level_data):
             print("Thankyou")
@@ -67,9 +64,9 @@ def validate_name(name):
     """
     try:
         if len(name) != 5:
-            raise ValueError(f"Your name must be consisted of 5 digits, you provided {len(name)}")
+            raise ValueError(Col.FAIL + f"Your name must be consisted of 5 digits, you provided {len(name)}")
     except ValueError as e:
-        print(f"Invalid data: {e}, Please try again.\n")
+        print(Col.FAIL + f"Invalid data: {e}, Please try again.\n")
         return False
     return True
 
@@ -81,7 +78,7 @@ def val_email(email):
         validate_email(email)
         return True    
     except EmailNotValidError as e:
-        print(f"Invalid data: {e}, Please try again.\n")
+        print(Col.FAIL + f"Invalid data: {e}, Please try again.\n")
         return False
     return True
 
@@ -90,10 +87,10 @@ def validate_level(level):
     Validate player name
     """
     try:
-        if len(level) != 5:
-            raise ValueError(f"Your name must be consisted of 5 digits, you provided {len(level)}")
+        if len(level) != 1:
+            raise ValueError(f"Your name must be consisted of 1 number, you provided {len(level)}")
     except ValueError as e:
-        print(f"Invalid data: {e}, Please try again.\n")
+        print(Col.FAIL + f"Invalid data: {e}, Please try again.\n")
         return False
     return True
 
@@ -140,11 +137,15 @@ def validate_return_player():
     player_data = SHEET.worksheet("player").get_all_values()
 
     if info in player_data:
+        print("Checking login information...")
+        time.sleep(1)
         print(f"Wecome back {n}!")
     else:
-        print("Your login infermation does not match")
-        print("Please check your player name and email")
-        print("Try again")
+        print("Checking login information...")
+        time.sleep(1.5)
+        print(Col.YELLOW + "Oops! Your login information does not match")
+        print(Col.YELLOW + "Please check your player name and email")
+        print(Col.YELLOW + "Try again")
         validate_return_player()
 
 
