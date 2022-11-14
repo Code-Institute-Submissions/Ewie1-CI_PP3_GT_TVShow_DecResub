@@ -224,12 +224,12 @@ def get_level_two():
 
 def get_level_three():
     """
-    Test function
+    Run game level three
+    Determine score count
     """
     print("Level 3\n")
     while True:
         score = 2000
-
         for question in level_three:
             attempts = 3
             print(level_three[question]["question"])
@@ -240,8 +240,7 @@ def get_level_three():
                 scores(score)
                 gameover(score)
         break
-
-           
+          
 def check_answer(question, ans, score, attempts):
     """
     Check player answer is wrong or correct, 
@@ -262,8 +261,6 @@ def check_answer(question, ans, score, attempts):
         print(Col.FAIL + "Sorry wrong answer, Try again..")
         return False
 
-
-
 def continue_play():
     """
     Run function to contniue play
@@ -274,7 +271,6 @@ def play_game():
     """"
     Start game
     """
-    
     score = 0
     logo_page()
     scores(score)
@@ -282,7 +278,6 @@ def play_game():
     get_question_answers()
     gameover(score)
     
-
 def main():
     """
     Main 
@@ -292,13 +287,6 @@ def main():
     intro()
     scores(score)
     menu()
-
-
-def end_game():
-    for question, i in enumerate(questions):
-        
-        quest = len(questions)
-        print(quest[-1])
              
 main()
 
