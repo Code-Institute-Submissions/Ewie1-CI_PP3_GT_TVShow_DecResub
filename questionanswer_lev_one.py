@@ -91,37 +91,37 @@ level_three = {
     },
 
     2 : {
-        "question" : "Gosh Amy. I'm sensing a little hostility. Is it maybe because like Sheldon's work your sex life is also theoretical?",
+        "question" : "Which actress portrays Carrie Bradshaw in Sex and the City?",
         "answer" : "The Big Bang Theory"        
     },
 
     3 : {
-        "question" : "No need to seize the last word Lord Baelish. I'll assume it was something clever",
+        "question" : "In the X-Files, which agency do Fox Mulder and Dana Scully work for?",
         "answer" : "Game of Thrones"
     },
 
     4 : {
-        "question" : "Jerry, just remeber, it,s not a lie if you believe it",
+        "question" : "In which UK city does Peaky Blinders take place?",
          "answer" : "Seinfeld"
     },
 
     5 : {
-        "question" : "You either run from things or you face them, Mr. White.",
+        "question" : "Which Netflix series is about the reign of Queen Elizabeth II?",
         "answer" : "Breaking Bad"
     },
     
     6 : {
-        "question" : "Oh my God! They killed Kenny",
+        "question" : "Which version of The Office has the most seasons? US or UK?",
         "answer" : "South Park"
     },
 
     7 : {
-        "question" : "Winter is coming...",
+        "question" : "In Vikings, who was Ragnar Lodbrok first wife?",
         "answer" : "Game of Thrones"
     },
 
     8 : {
-        "question" : "Luke, don't give in to the hate. That leads to the dark side",
+        "question" : "In Beverly Hills, 90210, what is 90210?",
         "answer" : "Star Wars"
     }
 }
