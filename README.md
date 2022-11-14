@@ -89,11 +89,10 @@
 
 #### Site Owner 
 
-10. As a owner I want the users to have options that
-12. As a owner I want user get feed back if input is wrong
-13. As a site owner I want users info to be save and accessed in a Google Spread Sheet
-14. I want user to know thier scores
-15. I want user to play game at different levels
+10. As a owner I want the users to have navigation options 
+11. As a owner I want user get feed back if input is wrong
+12. As a site owner I want users info to be save and accessed in a Google Spread Sheet
+13. I want user to play game at different levels
 
 ## Design
 
@@ -184,124 +183,124 @@ This website was structured with the gym logo which give a gym it character but 
 
 ### Testing user stories
 
-1. As  a first time user I expect a bright feel energetic gym feel
+1. I want to feel welcome
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
    | Color contrast | Bright color contrast and images with laughter |Website feels like the gym  | Works as expected |
 
    <details><summary>Screenshots</summary>
-   <img src="docs/features/brightenergy.PNG">
+   <img src="">
    </details>
 
-2.  As a firstime user I want to know the location of the gym
+2.  I want to have option to view game instructions
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
     | Map | Scroll down on first page and click the google mag  | Goolge show gym location in the city | Works as expected |
 
      <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedlocatmap.jpg">
+     <img src="">
      </details>
 
-3. As a first time user I want to see the gym interior
+3. I want to have the option to have a player name and save a profile
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
    | Gym interior image | Scroll down on home page | Find pictures of the gym interior | Works as expected |
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/intteaser.jpg">
+    <img src="">
     </details>
 
-4. As a first time user I want to know what training programs are available 
+4. I want to know when i make a wrong input
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
    | Trian with us and Gym comforts list | Scroll down on home page  | Readable intriguing list | Works as expected |
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/inkedfeatureslist.jpg">
+    <img src="">
     </details>
 
-5. As a returning user I want to know where to sign up
+5. I want the game to remeber me
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
    | Signup From | Cick signup button,Nav bar | Directed to signup page | Works as expected |
 
     <details><summary>Screenshots</summary>
-    <img src="docs/features/signupform.PNG">
+    <img src="">
     </details>
 
-6. As a returning user i want contact information   
+6. I want to have an easy login option   
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
    | Footer  on all pages | On any page scroll to the footer | See phone number and email address | Works as expected |
 
      <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedcontactinfo1.jpg">
+     <img src="">
      </details>
 
-7. As a returning user I was to know the reason and the mission of the gym
+7. I want to have access to different levels
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |   
    |-------------|------------|---------------------|-------------------|
    | About Us pragraph | Navigate to the us page in menu bar  | Read  | Works as expected |
 
      <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
-     <img src="docs/features/aboutus.PNG">
+     <img src="">
+     <img src="">
      </details>
 
-8. As a returning user I want to know about the membership and options available
+8. 
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
    | Membership Cards | Navigate to the About Uspage Scrooll down | Read | Works as expectd |
 
      <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
-     <img src="docs/features/test-user-story/inkedcards.jpg">
+     <img src="">
+     <img src="">
      </details>
 
-9. As a returning user, I want to see the gym's social media followings 
+9. 
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
    | Footer - social media section | On any page scroll to the bottom | Click on social media links | Works as expected | 
 
      <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedsociallinks.jpg">
+     <img src="">
      </details>
 
 
-10. As a siteowner I want the users to not only sign up but have membership option
+10. As a owner I want the users to have navigation options 
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
     | Signup Form | U Navigate sign up page click dropdown option| Choose from drop down option | Works as expected |
 
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/inkedsignupnav.jpg">
-    <img src="/docs/features/test-user-story/inkedcardoptions.PNG">
+    <img src="">
+    <img src="">
     </details>
 
-11. As a owner I want user to have a cutomized 404 error page if the wedsite fail to load
+11. As a owner I want user get feed back if input is wrong
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
     | 404 error page | On non-matched URL| Choose from drop down option | Works as expected |
 
     <details><summary>Screenshots</summary>
-    <img src="docs/features/test-user-story/404page.PNG">
+    <img src="">
     </details>
 
-12. As a site owner I want users to leave comments upon sign up
+12. As a site owner I want users info to be save and accessed in a Google Spread Sheet
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
     | Signup form | Navigate to signup page | Leave comments | Works as expected |
 
      <details><summary>Screenshots</summary>
-     <img src="docs/features/test-user-story/inkedsignupnav.jpg">
-     <img src="docs/features/comments.PNG">
+     <img src="">
+     <img src="">
      </details>
     
 ## Bugs
