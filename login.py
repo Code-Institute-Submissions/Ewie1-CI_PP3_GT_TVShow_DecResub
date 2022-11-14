@@ -9,13 +9,11 @@ SCOPE = [
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
     ]
-
+    
 LOGIN = Credentials.from_service_account_file("login.json")
 SCOPED_LOGIN = LOGIN.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_LOGIN)
 SHEET = GSPREAD_CLIENT.open("login")
-
-
 
 def get_user_name():
     """
@@ -94,7 +92,6 @@ def validate_level(level):
         return False
     return True
 
-
 def save_data_worksheet(data):
     """
     Update player information to worksheet
@@ -125,7 +122,6 @@ def validate_return_player():
     """
     Get player info, validate 
     """    
-    
     info = []
     n = get_user_name()
     e = get_user_email()
