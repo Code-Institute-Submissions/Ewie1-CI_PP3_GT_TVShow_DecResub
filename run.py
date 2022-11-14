@@ -103,10 +103,7 @@ def start_game():
     player_selection = input(new_player)
 
     while player_selection not in ("1", "2"):
-        print("You can only choose 1 or 2:")
-        clear_screen()
-        logo_page()
-        time.sleep(1)
+        print(Col.FAIL + "You can only choose 1 or 2:")
         player_selection = input(new_player)
 
     if player_selection == "1":
@@ -115,6 +112,8 @@ def start_game():
         play_game()
     
     elif player_selection == "2":
+        clear_screen()
+        logo_page()
         login.validate_return_player()
         clear_screen()
         logo_page()
@@ -126,7 +125,7 @@ def return_player_access():
     """
     Give access
     """
-
+    
     print(Col.Blue + "Choose Level")
     new_player = "Level 1       Level 2\n"
     player_selection = input(new_player)
@@ -158,10 +157,12 @@ def scores(score):
             print(Col.Green + "Register and move on to the next Level")
             login.get_registered()
             clear_screen()
+            logo_page()
             get_level_two()
         elif score == 2000:
             print(Col.Green + "Yaay!!! You cleared Level 2!")
             time.sleep(1)
+            logo_page()
             get_level_three()
         elif score == 3000:
             print(Col.Green + "Yaay!!! You cleared Level 3!")
