@@ -64,7 +64,7 @@ def validate_name(name):
     """
     try:
         if len(name) != 5:
-            raise ValueError(Col.FAIL + f"Your name must be consisted of 5 digits, you provided {len(name)}")
+            raise ValueError(Col.FAIL + f"Your name must be consisted of 5 characters with no spaces, you provided {len(name)}")
     except ValueError as e:
         print(Col.FAIL + f"Invalid data: {e}, Please try again.\n")
         return False
@@ -88,7 +88,7 @@ def validate_level(level):
     """
     try:
         if len(level) != 1:
-            raise ValueError(f"Your name must be consisted of 1 number, you provided {len(level)}")
+            raise ValueError(f"Your name must be consisted of 1 number with no spaces, you provided {len(level)}")
     except ValueError as e:
         print(Col.FAIL + f"Invalid data: {e}, Please try again.\n")
         return False
@@ -140,7 +140,8 @@ def validate_return_player():
     if info in player_data:
         print("Checking login information...")
         time.sleep(1)
-        print(Col.Green + f"Wecome back {n}!")
+        print(f"Welcome Back!  {Col.OKGREEN + n}!")
+        time.sleep(2)
     else:
         print("Checking login information...")
         time.sleep(1.5)

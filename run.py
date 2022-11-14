@@ -219,7 +219,7 @@ def get_level_two():
     Test function
     """
     print("Level 2\n")
-    print(Col.Blue + "Guess which TV show the characters are from\n")
+    print(Col.Blue + "WHICH TV show are the CHARACTERS from?\n")
     while True:
         score = 1000
 
