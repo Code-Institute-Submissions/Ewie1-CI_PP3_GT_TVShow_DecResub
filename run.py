@@ -34,7 +34,7 @@ def logo_page():
 
 def intro():
     """
-    Print game intro
+    p game intro
     input any key to start game
     """
     time.sleep(0.5)
@@ -79,13 +79,13 @@ def about_game():
     Decscribe how game is played 
     Return to intro page
     """
-    print("Guess which show these top TV quotes are from?")
+    print("Guess which TV shows these Quotes, Characters and Trevias are from?")
+    print("There are 3 levels to this game")
+    print("Score 1000 points to get to the next level")
     print("One right answer gives you 125 point and no ponits for wrong answers")
     print("Your answers must be in lowercase")
-    print("There are 3 levels of tests\nScore 1000 points to get to the next level")
-    print("Each level may ask more questions ans it gets a bit trickier")
-    print("After completing the first level yu can save your player info")
-    print("Logging in will allow you to skip level 1 when you return to the game")
+    print("Each level have a different cateogory of questions and it gets a bit trickier")
+    print("After completing the first level you can save your player info")
     input(Col.Blue + "Press any key to get back to the Home Screen")
     clear_screen()
     logo_page()
