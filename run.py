@@ -192,6 +192,7 @@ def get_question_answers():
     """
     Test function
     """
+    print("Level 1\n")
     while True:
         score = 0
 
@@ -212,7 +213,7 @@ def get_level_two():
     """
     Test function
     """
-    print("level 2\n")
+    print("Level 2\n")
     print(Col.Blue + "Guess which TV show the characters are from\n")
     while True:
         score = 1000
@@ -234,8 +235,7 @@ def get_level_three():
     """
     Test function
     """
-    print("level 3\n")
-    print("-" * 75)
+    print("Level 3\n")
     while True:
         score = 2000
 
