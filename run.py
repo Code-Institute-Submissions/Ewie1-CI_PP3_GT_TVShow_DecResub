@@ -80,6 +80,7 @@ def about_game():
     """
     print("Guess which show these top TV quotes are from?")
     print("One right answer gives you 125 point and no ponits for wrong answers")
+    print("Your answers must be in lowercase")
     print("There are 3 levels of tests\nScore 1000 points to get to the next level")
     print("Each level may ask more questions ans it gets a bit trickier")
     print("After completing the first level yu can save your player info")
