@@ -145,19 +145,19 @@ def scores(score):
     """
     for question in questions:
         if score == 1000:
-            print(Col.Green + "Yaay!!! You cleared Level 1!")
-            print(Col.Green + "Register and move on to the next Level")
+            print(Col.YELLOW + "Yaay!!! You cleared Level 1!")
+            print(Col.YELLOW + "Register and move on to the next Level")
             login.get_registered()
             clear_screen()
             logo_page()
             get_level_two()
         elif score == 2000:
-            print(Col.Green + "Yaay!!! You cleared Level 2!")
+            print(Col.YELLOW + "Yaay!!! You cleared Level 2!")
             time.sleep(1)
             logo_page()
             get_level_three()
         elif score == 3000:
-            print(Col.Green + "Yaay!!! You cleared Level 3!")
+            print(Col.YELLOW + "Yaay!!! You cleared Level 3!")
             time.sleep(1)
             print("You have won my game!\n Congratulations!")
         else:    
@@ -214,7 +214,7 @@ def get_level_two():
         for question in level_two:
             attempts = 3
             print(level_two[question]["question"])
-            ans = input("Enter Show:")
+            ans = input(Col.Green + "Enter Show:")
             check = check_answer(question, ans, score, attempts)
             if check:
                 score += 125
@@ -233,7 +233,7 @@ def get_level_three():
         for question in level_three:
             attempts = 3
             print(level_three[question]["question"])
-            ans = input("Enter Show:")
+            ans = input(Col.Green + "Enter Show:")
             check = check_answer(question, ans, score, attempts)
             if check:
                 score += 125
