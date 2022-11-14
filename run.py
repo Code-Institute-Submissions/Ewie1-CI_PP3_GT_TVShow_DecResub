@@ -10,15 +10,10 @@ from questionanswer_lev_one import level_two
 from questionanswer_lev_one import level_three
 import login
 
-
-
-
 def logo_page():
-
     """
     print game logo and name
     """
-
     print(Col.YELLOW + "  __________________    ______________   ____________.__  "  )               
     print(Col.YELLOW + " /  _____\__    ___/    \__    ___\   \ /   /   _____|  |__   ______  _  __")
     print(Col.OKGREEN + "/   \  ___ |    |  ______ |    |   \   Y   /\_____  \|  |  \ /  _ \ \/ \/ /")
@@ -32,7 +27,7 @@ def logo_page():
 
 def intro():
     """
-    p game intro
+    game intro
     input any key to start game
     """
     time.sleep(0.5)
@@ -121,13 +116,12 @@ def start_game():
 
 def return_player_access():
     """
-    Give access
+    Give access for level 1 and 2 to return player
     """
     
     print(Col.Blue + "Choose Level")
     new_player = "Level 1       Level 2\n"
     player_selection = input(new_player)
-
 
     while player_selection not in ("1", "2"):
         print("You can only choose 1 or 2:")
@@ -191,12 +185,12 @@ def clear_screen():
 
 def get_question_answers():
     """
-    Test function
+    Run  game level one questions
+    Determine score count
     """
     print("Level 1\n")
     while True:
         score = 0
-
         for question in questions:
             attempts = 3
             print(questions[question]["question"])
@@ -210,13 +204,13 @@ def get_question_answers():
 
 def get_level_two():
     """
-    Test function
+    Run game level two questions
+    Determine scores
     """
     print("Level 2\n")
     print(Col.Blue + "WHICH TV show are the CHARACTERS from?\n")
     while True:
         score = 1000
-
         for question in level_two:
             attempts = 3
             print(level_two[question]["question"])
