@@ -131,11 +131,38 @@ This website was structured with the gym logo which give a gym it character but 
 - Option to begin
 ### Menu
 - Gives option to see game instructions
+- Raise error if options input values are not to the required format
+- Give option to play game
 ### Game Instructions
+- Instruction on how game is played
+- Option to return to menu
 ### Play Options
+- Play game as a new player
+- Raise error if options input values are not to the required format
+- Login as a return player
 ### Log-in
+- Enter your saved game info
+- Validates user input values
+- Raise error in info does not exist
+- Raise error if name input values are not to the required format
+- Raise error if email input values are not to the required format
+- Raise error if level input values are not to the required format
+- Option to choose game level to play
 ### Sign-up
+- After completing Level 1, create a game profile
+- Validates user input values
+- Raise error if name input values are not to the required format
+- Raise error if email input values are not to the required format
+- Raise error if level input values are not to the required format
+- Save name, email and level to a google spread sheet
 ### Users Greetings
+- Give welcome back message to return user
 ### Game
+- Print one out of eight question one after the other
+- Give feedback for input answer 
+- Show score for answers
+- Complete level 1 and create your profile
+- Score 1000 points to get to different levels
 ### Game Levels
+- Three game levels
 ### End Game
