@@ -111,6 +111,7 @@ def start_game():
 
     if player_selection == "1":
         clear_screen()
+        logo_page()
         play_game()
     
     elif player_selection == "2":
@@ -137,6 +138,7 @@ def return_player_access():
 
     if player_selection == "1":
         clear_screen()
+        logo_page()
         get_question_answers()
     
     elif player_selection == "2":
