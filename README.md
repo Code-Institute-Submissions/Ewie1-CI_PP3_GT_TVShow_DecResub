@@ -73,7 +73,7 @@
  6. I want to have an easy login option
  7. I want to have access to different levels
  8. I want to 
- 9. I want to 
+ 9. I want to "add level column to access levels"
 
 
 #### Site Owner 
@@ -123,3 +123,19 @@ This website was structured with the gym logo which give a gym it character but 
 - gspread
 - google.oauth2.service_account
 
+## Features
+
+### Intro 
+- Colorful logo
+- Welcome message
+- Option to begin
+### Menu
+- Gives option to see game instructions
+### Game Instructions
+### Play Options
+### Log-in
+### Sign-up
+### Users Greetings
+### Game
+### Game Levels
+### End Game
