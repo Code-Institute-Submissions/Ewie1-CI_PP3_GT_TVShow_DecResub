@@ -83,7 +83,7 @@ def about_game():
     print("There are 3 levels to this game")
     print("Score 1000 points to get to the next level")
     print("One right answer gives you 125 point and no ponits for wrong answers")
-    print("Your answers must be in lowercase")
+    print("Your answers must be in lowercase and the exact format of the TV show title")
     print("Each level have a different cateogory of questions and it gets a bit trickier")
     print("After completing the first level you can save your player info")
     input(Col.Blue + "Press any key to get back to the Home Screen")
