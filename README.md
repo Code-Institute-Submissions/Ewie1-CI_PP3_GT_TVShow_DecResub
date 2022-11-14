@@ -12,8 +12,7 @@
     2. [Site Owner Goals](#site-owner-goals)
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
-    2. [User Requrements and Expectations](#user-requrements-and-expectations)
-    3. [User Stories](#user-stories)
+    2. [User Stories](#user-stories)
 3. [Design](#design)
     1. [Design Choices](#design-choices)
     2. [Colour](#colours)
@@ -57,60 +56,37 @@
 
 ### Target Audience
 
-- People who need a different gym experience
-- People who want good health
-- People who want to be fit 
-- Student, Retiries
-- People who need a guide for work and meal plans
-- Athletes
+- All audience
+- Recommened 10yrs and older
 
-### User Reqirements and Expectaions
-
-- Accessable site
-- Navigations that are simple to use
-- Clear images that gives a vision of the gym structure
-- Information on what is different from other gyms
-- Clear information on location and opening and closing time
-- A Warm welcome feel 
-- Vision of health and happiness
-- A vision of fittness
-- A vision of motivation
 
 ### User Stories
 
 #### First-time User 
-1. As  a first time user I expect a bright feel energetic gym feel
-2. I want to know the loaction of the gym
-3. I want to see the gym interior 
-4. I want to know what programs are avaiblable
+1. I want to feel welcome
+2. I want to have option to view game instructions
+3. I want to have the option to have a player name and save a profile
+4. I want to know when i make a wrong input
+5. I want to know my scores
 
 #### Returning User
  
- 5. I want to know where to sign up
- 6. As a returning user i want contact information
- 7. I was to know the reason and the mission of the gym
- 8. I want to know about the membership and options available
- 9. I want to see the gym's social media followings 
+ 5. I want the game to remeber me
+ 6. I want to have an easy login option
+ 7. I want to have access to different levels
+ 8. I want to 
+ 9. I want to 
 
 
 #### Site Owner 
 
-10. As a owner I want the users to not only sign up but have membership option
-12. As a owner I want user to have a cutomized 404 error page if the wedsite fail to load
-13. As a site owner I want users to leave comments upon sign up
+10. As a owner I want the users to have options that
+12. As a owner I want user get feed back if input is wrong
+13. As a site owner I want users info to be save and accessed in a Google Spread Sheet
+14. I want user to know thier scores
+15. I want user to play game at different levels
 
 ## Design
-
-### Design Choices
-This wedsite was designed to give a bright, energetic, and classy feel for people looking for a first time gym or want a gym change. The color contrast was chosen for a energetic feel. Images that promtes bright smiles, fitness a helpful  enviroment. Information that says you get more than your regular gym.
-
-### Colour
-The colors a bright orange and very dark blue which speakes enery and look good together. These two color also promotes accessiblity. It is one of the perfect color scheme for a gym.
-
-### Fonts
-The font style was chosen to give a warm gym and not to rough or macho. They give the website just enough to warm the eyes of all types of audiences. 
-Karla was set for the body font with sans serif as a default
-Mulish was used for some headings with Sans serif as a default
 
 ### Structure
 This website was structured with the gym logo which give a gym it character but also with the regular easy to use nav bar, a body of information and the regular footer which give the final characteristics of a funtional webpage. The wedsite has three pages:
