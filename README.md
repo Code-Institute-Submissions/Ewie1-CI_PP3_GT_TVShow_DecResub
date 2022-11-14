@@ -21,6 +21,17 @@
     3. [Python Libraries](#python-libraries)
     4. [Third Party Libraries](#third-party-libraries)
 5. [Features](#features)
+    1. [Intro](#intro)
+    2. [Menu](#menu)
+    3. [Game Instructions](#game-instructions)
+    4. [Play Options](#play-options)
+    5. [Log-in](#log-in)
+    6. [Sign-up](#sign-up)
+    7. [User Greetings](#users-greetings)
+    8. [Game](#game)
+    9. [Game Levels](#game-levels)
+    10. [End Game](#end-game)
+    11. [User Input Validation](#user-input-validation)
 6. [Testing](#validation)
     1. [HTML Validation](#HTML-validation)
     2. [CSS Validation](#CSS-validation)
@@ -144,16 +155,10 @@ This website was structured with the gym logo which give a gym it character but 
 - Enter your saved game info
 - Validates user input values
 - Raise error in info does not exist
-- Raise error if name input values are not to the required format
-- Raise error if email input values are not to the required format
-- Raise error if level input values are not to the required format
 - Option to choose game level to play
 ### Sign-up
 - After completing Level 1, create a game profile
 - Validates user input values
-- Raise error if name input values are not to the required format
-- Raise error if email input values are not to the required format
-- Raise error if level input values are not to the required format
 - Save name, email and level to a google spread sheet
 ### Users Greetings
 - Give welcome back message to return user
@@ -166,3 +171,140 @@ This website was structured with the gym logo which give a gym it character but 
 ### Game Levels
 - Three game levels
 ### End Game
+### User Input Validation
+- Raise error if name input values are not to the required format
+- Raise error if email input values are not to the required format
+- Raise error if level input values are not to the required format
+- Raise error if return user input info does not exist
+- Raise error if options input values are not to the required format
+
+## Validation
+- 
+
+
+### Testing user stories
+
+1. As  a first time user I expect a bright feel energetic gym feel
+
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+   |-------------|------------|---------------------|-------------------|
+   | Color contrast | Bright color contrast and images with laughter |Website feels like the gym  | Works as expected |
+
+   <details><summary>Screenshots</summary>
+   <img src="docs/features/brightenergy.PNG">
+   </details>
+
+2.  As a firstime user I want to know the location of the gym
+
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Map | Scroll down on first page and click the google mag  | Goolge show gym location in the city | Works as expected |
+
+     <details><summary>Screenshots</summary>
+     <img src="docs/features/test-user-story/inkedlocatmap.jpg">
+     </details>
+
+3. As a first time user I want to see the gym interior
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+   |-------------|------------|---------------------|-------------------|
+   | Gym interior image | Scroll down on home page | Find pictures of the gym interior | Works as expected |
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/intteaser.jpg">
+    </details>
+
+4. As a first time user I want to know what training programs are available 
+
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+   |-------------|------------|---------------------|-------------------|
+   | Trian with us and Gym comforts list | Scroll down on home page  | Readable intriguing list | Works as expected |
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/inkedfeatureslist.jpg">
+    </details>
+
+5. As a returning user I want to know where to sign up
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+   |-------------|------------|---------------------|-------------------|
+   | Signup From | Cick signup button,Nav bar | Directed to signup page | Works as expected |
+
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/signupform.PNG">
+    </details>
+
+6. As a returning user i want contact information   
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+   |-------------|------------|---------------------|-------------------|
+   | Footer  on all pages | On any page scroll to the footer | See phone number and email address | Works as expected |
+
+     <details><summary>Screenshots</summary>
+     <img src="docs/features/test-user-story/inkedcontactinfo1.jpg">
+     </details>
+
+7. As a returning user I was to know the reason and the mission of the gym
+
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |   
+   |-------------|------------|---------------------|-------------------|
+   | About Us pragraph | Navigate to the us page in menu bar  | Read  | Works as expected |
+
+     <details><summary>Screenshots</summary>
+     <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
+     <img src="docs/features/aboutus.PNG">
+     </details>
+
+8. As a returning user I want to know about the membership and options available
+
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+   |-------------|------------|---------------------|-------------------|
+   | Membership Cards | Navigate to the About Uspage Scrooll down | Read | Works as expectd |
+
+     <details><summary>Screenshots</summary>
+     <img src="docs/features/test-user-story/inkedmenu-aboutusnav.jpg">
+     <img src="docs/features/test-user-story/inkedcards.jpg">
+     </details>
+
+9. As a returning user, I want to see the gym's social media followings 
+
+   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+   |-------------|------------|---------------------|-------------------|
+   | Footer - social media section | On any page scroll to the bottom | Click on social media links | Works as expected | 
+
+     <details><summary>Screenshots</summary>
+     <img src="docs/features/test-user-story/inkedsociallinks.jpg">
+     </details>
+
+
+10. As a siteowner I want the users to not only sign up but have membership option
+
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Signup Form | U Navigate sign up page click dropdown option| Choose from drop down option | Works as expected |
+
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/inkedsignupnav.jpg">
+    <img src="/docs/features/test-user-story/inkedcardoptions.PNG">
+    </details>
+
+11. As a owner I want user to have a cutomized 404 error page if the wedsite fail to load
+
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | 404 error page | On non-matched URL| Choose from drop down option | Works as expected |
+
+    <details><summary>Screenshots</summary>
+    <img src="docs/features/test-user-story/404page.PNG">
+    </details>
+
+12. As a site owner I want users to leave comments upon sign up
+
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Signup form | Navigate to signup page | Leave comments | Works as expected |
+
+     <details><summary>Screenshots</summary>
+     <img src="docs/features/test-user-story/inkedsignupnav.jpg">
+     <img src="docs/features/comments.PNG">
+     </details>
+    
+## Bugs
+## Deployment
+## Credits
+## Aknowledgements
