@@ -87,41 +87,41 @@ level_two = {
 level_three = {
     1 : {
         "question" : "In which language is the original version of Squid Game?",
-        "answer" : "Friends"
+        "answer" : "korean"
     },
 
     2 : {
         "question" : "Which actress portrays Carrie Bradshaw in Sex and the City?",
-        "answer" : "The Big Bang Theory"        
+        "answer" : "sarah jessica parker"        
     },
 
     3 : {
         "question" : "In the X-Files, which agency do Fox Mulder and Dana Scully work for?",
-        "answer" : "Game of Thrones"
+        "answer" : "fbi"
     },
 
     4 : {
         "question" : "In which UK city does Peaky Blinders take place?",
-         "answer" : "Seinfeld"
+         "answer" : "birmingham"
     },
 
     5 : {
         "question" : "Which Netflix series is about the reign of Queen Elizabeth II?",
-        "answer" : "Breaking Bad"
+        "answer" : "the crown"
     },
     
     6 : {
-        "question" : "Which version of The Office has the most seasons? US or UK?",
-        "answer" : "South Park"
+        "question" : "In which city does The Wire take place?",
+        "answer" : "baltimore"
     },
 
     7 : {
         "question" : "In Vikings, who was Ragnar Lodbrok first wife?",
-        "answer" : "Game of Thrones"
+        "answer" : "lagertha"
     },
 
     8 : {
-        "question" : "In Beverly Hills, 90210, what is 90210?",
-        "answer" : "Star Wars"
+        "question" : "What is Kiefer Sutherland character in 24",
+        "answer" : "jack bauer"
     }
 }
