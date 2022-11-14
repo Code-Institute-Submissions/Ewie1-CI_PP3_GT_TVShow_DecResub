@@ -1,6 +1,4 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+
 import random
 import sys
 import os
@@ -168,8 +166,6 @@ def scores(score):
             print(Col.Green + "Yaay!!! You cleared Level 3!")
             time.sleep(1)
             print("You have won my game!\n Congratulations!")
-        #elif score < 1000 or end_game():
-            #print("Hello")
         else:    
             pass
 
@@ -203,7 +199,6 @@ def get_question_answers():
 
         for question in questions:
             attempts = 3
-        #    while attempts > 0:
             print(questions[question]["question"])
             ans = input(Col.Green + "Enter Show:")
             check = check_answer(question, ans, score, attempts)
@@ -211,7 +206,6 @@ def get_question_answers():
                 score += 125
                 scores(score)
                 gameover(score)
-           # attempts -= 1
         break
 
 def get_level_two():
@@ -225,7 +219,6 @@ def get_level_two():
 
         for question in level_two:
             attempts = 3
-        #    while attempts > 0:
             print(level_two[question]["question"])
             ans = input("Enter Show:")
             check = check_answer(question, ans, score, attempts)
@@ -233,7 +226,6 @@ def get_level_two():
                 score += 125
                 scores(score)
                 gameover(score)
-           # attempts -= 1
         break
 
 def get_level_three():
@@ -246,7 +238,6 @@ def get_level_three():
 
         for question in level_three:
             attempts = 3
-        #    while attempts > 0:
             print(level_three[question]["question"])
             ans = input("Enter Show:")
             check = check_answer(question, ans, score, attempts)
@@ -254,7 +245,6 @@ def get_level_three():
                 score += 125
                 scores(score)
                 gameover(score)
-           # attempts -= 1
         break
 
            
@@ -315,11 +305,7 @@ def end_game():
         
         quest = len(questions)
         print(quest[-1])
-            
-            
-        
-#end_game()
-
+             
 main()
-#start_game()
-#get_level_two()
+
+
