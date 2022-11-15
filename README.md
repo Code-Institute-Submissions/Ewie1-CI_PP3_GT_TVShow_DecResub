@@ -158,7 +158,7 @@ This website was structured with the gym logo which give a gym it character but 
 - Instruction on how game is played
 - Option to return to menu
   <details><summary>Screenshots</summary>
-   <img src="">
+   <img src="doc/features/instructions.jpg">
    </details>
 
 ### Play Options
