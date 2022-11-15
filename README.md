@@ -256,6 +256,7 @@ This website was structured with the gym logo which give a gym it character but 
     | Menu | Input 1 or 2  | Display instructions or Play game options | Works as expected |
 
      <details><summary>Screenshots</summary>
+     <img src="doc/features/testing/intro-edited.jpg">
      <img src="doc/features/testing/menuone-edited.jpg">
      <img src="doc/features/instructions.jpg">
      </details>
@@ -264,10 +265,14 @@ This website was structured with the gym logo which give a gym it character but 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
    | Play game options | Input 1 or 2 | Paly as a new player or Login as a return player | Works as expected |
-    <details><summary>Screenshots</summary>
-    <img src="doc/features/testing/register-edited.jpg">
-    <img src="doc/features/profile-info.jpg">
-    </details>
+     <details><summary>Screenshots</summary>
+     <img src="doc/features/testing/intro-edited.jpg">
+     <img src="doc/features/testing/menutwo-edited.jpg">
+     <img scr="doc/features/testing/play-optionsoneedited.jpg">
+     <img src="doc/features/testing/register-edited.jpg">
+     <img src="doc/features/profile-info.jpg">
+     <img src="doc/features/testing/register-completededited.jpg">
+     </details>
 
 4. I want to know when i make a wrong input
 
@@ -301,9 +306,11 @@ This website was structured with the gym logo which give a gym it character but 
    | Footer  on all pages | On any page scroll to the footer | See phone number and email address | Works as expected |
 
      <details><summary>Screenshots</summary>
+     <img src="doc/features/testing/intro-edited.jpg">
      <img src="doc/features/testing/menutwo-edited.jpg">
+     <img src="doc/features/testing/play-optionstwoedited.jpg">
      <img src="doc/features/profile-info.jpg">
-     <img src="">
+     <img src="doc/features/welcomeback.jpg">
      </details>
 
 7. As a return user I want to have access to different levels
@@ -353,7 +360,12 @@ This website was structured with the gym logo which give a gym it character but 
 
     <details><summary>Screenshots</summary>
     <img src="doc/features/intro.jpg">
-    <img src="">
+    <img src="doc/features/testing/menuone-edited.jpg">
+    <img src="doc/features/testing/menutwo-edited.jpg">
+    <img src="doc/features/testing/play-optionsoneedited.jpg">
+    <img src="doc/features/testing/play-optionstwoedited.jpg">
+    <img src="doc/features/testing/level-optionedited.jpg">
+    <img src="doc/features/testing/level-optioneditedtwo.jpg">
     </details>
 
 11. As a owner I want user get feed back if input is wrong
@@ -373,10 +385,13 @@ This website was structured with the gym logo which give a gym it character but 
     | Google spread sheet | After level 1 completion fill out name, email and level input | save to google spread sheet | Works as expected |
 
      <details><summary>Screenshots</summary>
+     <img src="doc/features/testing/intro-edited.jpg">
+     <img src="doc/features/testing/menutwo-edited.jpg">
+     <img scr="doc/features/testing/play-optionsoneedited.jpg">
      <img src="doc/features/register.jpg">
      <img src="doc/features/profile-info.jpg">
-     <img src="">
-     <img src="">
+     <img src="doc/features/testing/register-completededited.jpg">
+     <img src="doc/features/testing/spread-sheet.jpg">
      </details>
     
 ## Bugs
