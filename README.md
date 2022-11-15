@@ -82,7 +82,7 @@
  
  5. I want the game to remeber me
  6. I want to have an easy login option
- 7. I want to have access to different levels
+ 7. As a returned user I want to have access to different levels
  8. I want to 
  9. I want to "add level column to access levels"
 
@@ -187,7 +187,7 @@ This website was structured with the gym logo which give a gym it character but 
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
-   | Color contrast | Bright color contrast and images with laughter |Website feels like the gym  | Works as expected |
+   | Color contrast |  Welcome message | Comforting load speed | Works as expected |
 
    <details><summary>Screenshots</summary>
    <img src="">
@@ -197,7 +197,7 @@ This website was structured with the gym logo which give a gym it character but 
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
-    | Map | Scroll down on first page and click the google mag  | Goolge show gym location in the city | Works as expected |
+    | Menu | Input 1 or 2  | Display instructions or Play game options | Works as expected |
 
      <details><summary>Screenshots</summary>
      <img src="">
@@ -206,7 +206,7 @@ This website was structured with the gym logo which give a gym it character but 
 3. I want to have the option to have a player name and save a profile
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
-   | Gym interior image | Scroll down on home page | Find pictures of the gym interior | Works as expected |
+   | Play game options | Input 1 or 2 | Paly as a new player or Login as a return player | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="">
     </details>
@@ -215,7 +215,7 @@ This website was structured with the gym logo which give a gym it character but 
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
-   | Trian with us and Gym comforts list | Scroll down on home page  | Readable intriguing list | Works as expected |
+   | Error message | Wrong input or wrong input format   | Red colored text error messages | Works as expected |
     <details><summary>Screenshots</summary>
     <img src="">
     </details>
@@ -223,7 +223,7 @@ This website was structured with the gym logo which give a gym it character but 
 5. I want the game to remeber me
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
-   | Signup From | Cick signup button,Nav bar | Directed to signup page | Works as expected |
+   | Login Option | Input 2 on Play game option display |Name, email, game level input feild | Works as expected |
 
     <details><summary>Screenshots</summary>
     <img src="">
@@ -238,11 +238,11 @@ This website was structured with the gym logo which give a gym it character but 
      <img src="">
      </details>
 
-7. I want to have access to different levels
+7.  As a return user I want to have access to different levels
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |   
    |-------------|------------|---------------------|-------------------|
-   | About Us pragraph | Navigate to the us page in menu bar  | Read  | Works as expected |
+   | Return player option | Input 1 or 2   | Sart level 1 or 2  | Works as expected |
 
      <details><summary>Screenshots</summary>
      <img src="">
@@ -275,7 +275,7 @@ This website was structured with the gym logo which give a gym it character but 
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
-    | Signup Form | U Navigate sign up page click dropdown option| Choose from drop down option | Works as expected |
+    | Menu and Play game display | Enter required option input| Display the next game section | Works as expected |
 
     <details><summary>Screenshots</summary>
     <img src="">
@@ -296,7 +296,7 @@ This website was structured with the gym logo which give a gym it character but 
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
-    | Signup form | Navigate to signup page | Leave comments | Works as expected |
+    | Google spread sheet | After level 1 completion fill out name, email and level input | save to google spread sheet | Works as expected |
 
      <details><summary>Screenshots</summary>
      <img src="">
@@ -319,6 +319,22 @@ This application has been deployed from GitHub to Heroku by following the steps:
 9.  Choose the branch you want to buid your app from
 10. If prefered, click on "Enable Automatic Deploys", which keeps the app up to date with your GitHub repository
 11. Wait for the app to build. Once ready you will see the “App was successfully deployed” message and a 'View' button to take you to your deployed link.
+
+### Forking the GitHub Repository
+1. Go to the GitHub repository
+2. Click on Fork button in top right corner
+3. You will then have a copy of the repository in your own GitHub account.
+   
+### Making a Local Clone
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it
+3. Highlight the "HTTPS" button to clone with HTTPS and copy the link
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone <span>https://</span>github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7. Press Enter to create your local clone
+
+[Back to Table Of Contents](#table-of-contents)
 
 ## Credits
 ## Aknowledgements

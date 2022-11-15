@@ -287,7 +287,7 @@ def main():
     intro()
     scores(score)
     menu()
-             
+                
 main()
 
 
