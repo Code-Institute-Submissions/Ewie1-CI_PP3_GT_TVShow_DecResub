@@ -177,6 +177,7 @@ This website was structured with the gym logo which give a gym it character but 
 - Raise error in info does not exist
 - Option to choose game level to play
   <details><summary>Screenshots</summary>
+   <img src="">
    <img src="doc/features/profile-info.jpg">
    </details>
 
@@ -186,6 +187,7 @@ This website was structured with the gym logo which give a gym it character but 
 - Validates user input values
 - Save name, email and level to a google spread sheet
   <details><summary>Screenshots</summary>
+   <img src=""> 
    <img src="doc/features/profile-info.jpg">
    </details>
 
@@ -193,7 +195,8 @@ This website was structured with the gym logo which give a gym it character but 
   Greeting message is displayed to welcome all user at the Intro display and a greeting message to wlecome back returning player which give a warm feel.
 - Give welcome back message to return user
   <details><summary>Screenshots</summary>
-   <img src="">
+   <img src="doc/features/intro.jpg">
+   <img src="doc/features/welcomeback.jpg">
    </details>
 
 ### Game
@@ -204,13 +207,16 @@ This website was structured with the gym logo which give a gym it character but 
 - Complete level 1 and create your profile
 - Score 1000 points to get to different levels
   <details><summary>Screenshots</summary>
-   <img src="">
+   <img src="doc/features/level-one.jpg">
+   <img src="doc/features/wrong-answerfault.jpg">
    </details>
 
 ### Game Levels
 - Three game levels
   <details><summary>Screenshots</summary>
-   <img src="">
+   <img src="doc/features/level-one.jpg">
+   <img src="doc/features/gamelvl-two.jpg">
+   <img src="doc/features/gamelevl-three.jpg">
    </details>
 
 ### End Game
