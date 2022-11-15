@@ -351,6 +351,8 @@ This website was structured with the gym logo which give a gym it character but 
      </details>
     
 ## Bugs
+- The site was deployed with an error message of unable to find login file 
+- Fix: due to using "login.json" instead of "creds.json" default.js "env" setting needed to be changed from CREDS to LOGIN
 ## Deployment
 ### Heroku
 This application has been deployed from GitHub to Heroku by following the steps:
