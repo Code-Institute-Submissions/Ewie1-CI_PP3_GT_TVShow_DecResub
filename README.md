@@ -140,23 +140,35 @@ This website was structured with the gym logo which give a gym it character but 
 - Colorful logo
 - Welcome message
 - Option to begin
+  <details><summary>Screenshots</summary>
+   <img src="doc/features/intro.jpg">
+   </details>
 
 ### Menu
    The Menu come after the Intro and gives the user the option to read the game instructions or move forward to play the game.
 - Gives option to see game instructions
 - Raise error if options input values are not to the required format
 - Give option to play game
+ <details><summary>Screenshots</summary>
+   <img src="doc/features/menu.jpg">
+   </details>
 
 ### Game Instructions
    The game in structure discribes the game and how it is play and will return to the Menu display at the press of any button.
 - Instruction on how game is played
 - Option to return to menu
+  <details><summary>Screenshots</summary>
+   <img src="">
+   </details>
 
 ### Play Options
    The Play option comes after the palyer read the instructions and opt to play game. This gives the user options to play as a new player or login if they have an existing profile.
 - Play game as a new player
 - Raise error if options input values are not to the required format
 - Login as a return player
+  <details><summary>Screenshots</summary>
+   <img src="">
+   </details>
 
 ### Log-in
    After logging in by input of game name, email and level. This will be varified with a welcome message if the player exist and give the option to choose game lvels to play. If profile does not exist, then an error message will be displayed.
@@ -164,22 +176,43 @@ This website was structured with the gym logo which give a gym it character but 
 - Validates user input values
 - Raise error in info does not exist
 - Option to choose game level to play
+  <details><summary>Screenshots</summary>
+   <img src="">
+   </details>
+
 ### Sign-up
    After completing level one the player is allowed to create a profile by inputing a game name, email address and game level which will be saved to a google spraed sheet.
 - After completing Level 1, create a game profile
 - Validates user input values
 - Save name, email and level to a google spread sheet
+  <details><summary>Screenshots</summary>
+   <img src="">
+   </details>
+
 ### Users Greetings
   Greeting message is displayed to welcome all user at the Intro display and a greeting message to wlecome back returning player which give a warm feel.
 - Give welcome back message to return user
+  <details><summary>Screenshots</summary>
+   <img src="">
+   </details>
+
 ### Game
+   The game print one of eight question, asks for an answer and gives you a score of 125 if your answer is right and an fault message if it is incorrect
 - Print one out of eight question one after the other
 - Give feedback for input answer 
 - Show score for answers
 - Complete level 1 and create your profile
 - Score 1000 points to get to different levels
+  <details><summary>Screenshots</summary>
+   <img src="">
+   </details>
+
 ### Game Levels
 - Three game levels
+  <details><summary>Screenshots</summary>
+   <img src="">
+   </details>
+
 ### End Game
 ### User Input Validation
 - Raise error if name input values are not to the required format
@@ -187,6 +220,9 @@ This website was structured with the gym logo which give a gym it character but 
 - Raise error if level input values are not to the required format
 - Raise error if return user input info does not exist
 - Raise error if options input values are not to the required format
+   <details><summary>Screenshots</summary>
+   <img src="">
+   </details>
 
 ## Validation
 - 
