@@ -136,30 +136,41 @@ This website was structured with the gym logo which give a gym it character but 
 ## Features
 
 ### Intro 
+  The Intro displays game logo, prints a  welcome message at comforting speed and gives the option to begin. 
 - Colorful logo
 - Welcome message
 - Option to begin
+
 ### Menu
+   The Menu come after the Intro and gives the user the option to read the game instructions or move forward to play the game.
 - Gives option to see game instructions
 - Raise error if options input values are not to the required format
 - Give option to play game
+
 ### Game Instructions
+   The game in structure discribes the game and how it is play and will return to the Menu display at the press of any button.
 - Instruction on how game is played
 - Option to return to menu
+
 ### Play Options
+   The Play option comes after the palyer read the instructions and opt to play game. This gives the user options to play as a new player or login if they have an existing profile.
 - Play game as a new player
 - Raise error if options input values are not to the required format
 - Login as a return player
+
 ### Log-in
+   After logging in by input of game name, email and level. This will be varified with a welcome message if the player exist and give the option to choose game lvels to play. If profile does not exist, then an error message will be displayed.
 - Enter your saved game info
 - Validates user input values
 - Raise error in info does not exist
 - Option to choose game level to play
 ### Sign-up
+   After completing level one the player is allowed to create a profile by inputing a game name, email address and game level which will be saved to a google spraed sheet.
 - After completing Level 1, create a game profile
 - Validates user input values
 - Save name, email and level to a google spread sheet
 ### Users Greetings
+  Greeting message is displayed to welcome all user at the Intro display and a greeting message to wlecome back returning player which give a warm feel.
 - Give welcome back message to return user
 ### Game
 - Print one out of eight question one after the other
