@@ -266,8 +266,8 @@ This website was structured with the gym logo which give a gym it character but 
    |-------------|------------|---------------------|-------------------|
    | Play game options | Input 1 or 2 | Paly as a new player or Login as a return player | Works as expected |
     <details><summary>Screenshots</summary>
-    <img src="">
-    <img src="">
+    <img src="doc/features/testing/register-edited.jpg">
+    <img src="doc/features/profile-info.jpg">
     </details>
 
 4. I want to know when i make a wrong input
@@ -276,7 +276,12 @@ This website was structured with the gym logo which give a gym it character but 
    |-------------|------------|---------------------|-------------------|
    | Error message | Wrong input or wrong input format   | Red colored text error messages | Works as expected |
     <details><summary>Screenshots</summary>
-    <img src="">
+    <img src="doc/features/menufault.jpg">
+    <img src="doc/features/playoption-fault.jpg">
+    <img src="doc/features/level-optionfault.jpg">
+    <img src="doc/features/info-inputfault.jpg">
+    <img src="doc/features/profilematch-fault.jpg">
+    <img src="doc/features/wrong-answerfault.jpg">
     </details>
 
 5. I want the game to remeber me
@@ -287,7 +292,6 @@ This website was structured with the gym logo which give a gym it character but 
     <details><summary>Screenshots</summary>
     <img src="doc/features/testing/menutwo-edited.jpg">
     <img src="doc/features/profile-info.jpg">
-    <img src="">
     </details>
 
 6. I want to have an easy login option   
