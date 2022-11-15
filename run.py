@@ -124,7 +124,7 @@ def return_player_access():
     player_selection = input(new_player)
 
     while player_selection not in ("1", "2"):
-        print("You can only choose 1 or 2:")
+        print(Col.FAIL + "You can only choose 1 or 2:")
         player_selection = input(new_player)
 
     if player_selection == "1":
@@ -153,7 +153,8 @@ def scores(score):
             get_level_two()
         elif score == 2000:
             print(Col.YELLOW + "Yaay!!! You cleared Level 2!")
-            time.sleep(1)
+            time.sleep(2)
+            clear_screen()
             logo_page()
             get_level_three()
         elif score == 3000:
