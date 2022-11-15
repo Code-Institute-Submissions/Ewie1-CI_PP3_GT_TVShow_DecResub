@@ -94,7 +94,7 @@ def start_game():
     player_selection = input(new_player)
 
     while player_selection not in ("1", "2"):
-        print(Col.FAIL + "You can only choose 1 or 2:")
+        print(Col.RED + "You can only choose 1 or 2:")
         player_selection = input(new_player)
 
     if player_selection == "1":
@@ -122,7 +122,7 @@ def return_player_access():
     player_selection = input(new_player)
 
     while player_selection not in ("1", "2"):
-        print(Col.FAIL + "You can only choose 1 or 2:")
+        print(Col.RED + "You can only choose 1 or 2:")
         player_selection = input(new_player)
 
     if player_selection == "1":

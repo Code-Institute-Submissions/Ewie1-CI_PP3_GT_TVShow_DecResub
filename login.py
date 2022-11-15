@@ -62,9 +62,9 @@ def validate_name(name):
     """
     try:
         if len(name) != 5:
-            raise ValueError(Col.FAIL + f"Your name must be consisted of 5 characters with no spaces, you provided {len(name)}")
+            raise ValueError(Col.RED + f"Your name must be consisted of 5 characters with no spaces, you provided {len(name)}")
     except ValueError as e:
-        print(Col.FAIL + f"Invalid data: {e}, Please try again.\n")
+        print(Col.RED + f"Invalid data: {e}, Please try again.\n")
         return False
     return True
 
@@ -76,7 +76,7 @@ def val_email(email):
         validate_email(email)
         return True    
     except EmailNotValidError as e:
-        print(Col.FAIL + f"Invalid data: {e}, Please try again.\n")
+        print(Col.RED + f"Invalid data: {e}, Please try again.\n")
         return False
     return True
 
@@ -88,7 +88,7 @@ def validate_level(level):
         if len(level) != 1:
             raise ValueError(f"Your name must be consisted of 1 number with no spaces, you provided {len(level)}")
     except ValueError as e:
-        print(Col.FAIL + f"Invalid data: {e}, Please try again.\n")
+        print(Col.RED + f"Invalid data: {e}, Please try again.\n")
         return False
     return True
 
