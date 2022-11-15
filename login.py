@@ -109,7 +109,7 @@ def save_data_worksheet(data):
     name_save = SHEET.worksheet("player")
     name_save.append_row(data)
     print("Player saved")
-    time.sleep(9)
+    time.sleep(2)
 
 
 def get_registered():
@@ -148,7 +148,7 @@ def validate_return_player():
         print("Checking login information...")
         time.sleep(1)
         print(f"Welcome Back!  {Col.OKGREEN + n}!")
-        time.sleep(9)
+        time.sleep(2)
     else:
         print("Checking login information...")
         time.sleep(1.5)

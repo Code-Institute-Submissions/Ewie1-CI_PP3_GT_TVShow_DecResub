@@ -1,6 +1,8 @@
 from colorama import init
 
 init(autoreset=True)
+
+
 class Color:
     OKGREEN = '\033[92m'
     WARNING = '\033[93m'
