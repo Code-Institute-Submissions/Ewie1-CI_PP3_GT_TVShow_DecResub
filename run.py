@@ -102,7 +102,7 @@ def start_game():
     if player_selection == "1":
         clear_screen()
         logo_page()
-        play_game()
+        get_question_answers()
     
     elif player_selection == "2":
         clear_screen()
@@ -147,7 +147,6 @@ def scores(score):
         if score == 1000:
             print(Col.YELLOW + "Yaay!!! You cleared Level 1!")
             print(Col.YELLOW + "Register and move on to the next Level")
-            time.sleep(9)
             login.get_registered()
             clear_screen()
             logo_page()
