@@ -22,7 +22,6 @@ def logo_page():
     print(Col.Green + "-" * 75)
     print("")
 
-
 def intro():
     """
     game intro
@@ -48,16 +47,13 @@ def menu():
     options = "1. About Game          2. Play Game\n"
     selected_option = input(options)
     
-
     while selected_option not in ("1", "2"):
         print(Col.RED + "You can only choose 1 or 2:")
-        selected_option = input(options)
-        
+        selected_option = input(options)   
     if selected_option == "1":
         clear_screen()
         logo_page()
         about_game()
-        
     elif selected_option == "2":
         clear_screen()
         logo_page()
@@ -116,7 +112,6 @@ def return_player_access():
     """
     Give access for level 1 and 2 to return player
     """
-    
     print(Col.Blue + "Choose Level")
     new_player = "Level 1       Level 2\n"
     player_selection = input(new_player)
@@ -162,20 +157,6 @@ def scores(score):
         else:    
             pass
 
-def gameover(score):
-    """
-    """
-    if score > 875 and score < 1000:
-        print("Gameover")
-        print("Try again")
-    elif len(questions) and score == 1900: 
-        print("Gameover")
-    elif len(questions) and score == 2900:
-        print("gameover")
-    else:
-        pass       
-    
-
 def clear_screen():
     """
     Clear screen
@@ -198,7 +179,6 @@ def get_question_answers():
             if check:
                 score += 125
                 scores(score)
-                gameover(score)
         break
 
 def get_level_two():
@@ -218,7 +198,6 @@ def get_level_two():
             if check:
                 score += 125
                 scores(score)
-                gameover(score)
         break
 
 def get_level_three():
@@ -237,7 +216,6 @@ def get_level_three():
             if check:
                 score += 125
                 scores(score)
-                gameover(score)
         break
           
 def check_answer(question, ans, score, attempts):
@@ -265,17 +243,6 @@ def continue_play():
     Run function to contniue play
     """
     logo_page()
-
-def play_game():
-    """"
-    Start game
-    """
-    score = 0
-    logo_page()
-    scores(score)
-    time.sleep(1)
-    get_question_answers()
-    gameover(score)
     
 def main():
     """
@@ -286,7 +253,7 @@ def main():
     intro()
     scores(score)
     menu()
-                
+
 main()
 
 

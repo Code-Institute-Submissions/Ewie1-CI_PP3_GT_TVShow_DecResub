@@ -88,6 +88,7 @@ def validate_level(level):
         if len(level) != 1:
             raise ValueError(f"Your name must be consisted of 1 number with no spaces, you provided {len(level)}")
     except ValueError as e:
+        
         print(Col.RED + f"Invalid data: {e}, Please try again.\n")
         return False
     return True
