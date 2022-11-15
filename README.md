@@ -1,7 +1,7 @@
 # Guess That TVshow
 (Developer: Ewart Hestick)
 
-![Mockup image]()
+![Mockup image](doc/features/game.jpg)
 
 [Live webpage](https://guess-that-tvshow2.herokuapp.com/)
 
@@ -32,14 +32,8 @@
     9. [Game Levels](#game-levels)
     10. [End Game](#end-game)
     11. [User Input Validation](#user-input-validation)
-6. [Testing](#validation)
-    1. [HTML Validation](#HTML-validation)
-    2. [CSS Validation](#CSS-validation)
-    3. [Accessibility](#accessibility)
-    4. [Performance](#performance)
-    5. [Device testing](#performing-tests-on-various-devices)
-    6. [Browser compatibility](#browser-compatability)
-    7. [Testing user stories](#testing-user-stories)
+6. [Validation](#validation) 
+7. [Testing user stories](#testing-user-stories)
 8. [Bugs](#Bugs)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
@@ -380,14 +374,26 @@ This website was structured with the gym logo which give a gym it character but 
      </details>
     
 ## Bugs
-- The site was deployed with an error message of unable to find login file 
-- Fix: due to using "login.json" instead of "creds.json" default.js "env" setting needed to be changed from CREDS to LOGIN
+- Bug: The site was deployed with an error message of unable to find login file 
+  Fix: due to using "login.json" instead of "creds.json" default.js "env" setting needed to be changed from CREDS to LOGIN
+- Bug: " E501 line too long" error during validation
+  Fix: Re-write logo and game instructions
+- Bug: Colorama module could not be found after deployment 
+  Fix: "pip3 freeze > requirements.txt" was updated but was not pushed up to github
+- Bug: email_validator could not be found after deployment
+  Fix: "pip3 freeze > requirements.txt" needed updating
+- Bug: During validation "E302 expected 2 blank lines" error was present
+  Fix: Add second line between functions
+- Bug: During validation "E203 whitespace before" in questionanswer_lev_one.py
+  Fix: Delete extra space in dictionary
+
 ## Deployment
+
 ### Heroku
 This application has been deployed from GitHub to Heroku by following the steps:
 
 1. Create or log in to your account at heroku.com
-2. Create a new app, add a unique app name (this project is named "ci-pp3-connect4") and choose your region
+2. Create a new app, add a unique app name (this project is named "guess-that-tvshow") and choose your region
 3. Click on create app
 4. Go to "Settings"
 5. Under Config Vars store any sensitive data you saved in .json file. Name 'Key' field, copy the .json file and paste it to 'Value' field. Also add a key 'PORT' and value '8000'.
