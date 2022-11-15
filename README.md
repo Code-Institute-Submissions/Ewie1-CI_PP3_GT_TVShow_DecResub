@@ -110,8 +110,8 @@ This website was structured with the gym logo which give a gym it character but 
 - Python
 
 ### Frameworks & Tools
-- Git
-- GitHub
+- Git: was used for version control within VSCode to push the code to GitHub
+- GitHub:
 - Gitpod
 - Google Cloud
 - Google Sheets
@@ -121,10 +121,8 @@ This website was structured with the gym logo which give a gym it character but 
 
 ### Python Libraries
 
-- os
-- time
-- sleep
-- sys
+- os: used to clear terminal
+- time & sleep: used to displayed delayed messages in the terminal 
 
 ### Third Party Libraries
 

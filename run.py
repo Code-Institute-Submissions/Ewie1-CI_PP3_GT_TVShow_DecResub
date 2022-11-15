@@ -1,6 +1,4 @@
 
-import random
-import sys
 import os
 import time
 from time import sleep
