@@ -229,7 +229,22 @@ This website was structured with the gym logo which give a gym it character but 
    </details>
 
 ## Validation
-- 
+   
+   <details><summary>PEP8CI check run.py </summary>
+   <img src="doc/features/testing/validation/run-validation.jpg">
+   </details>
+
+   <details><summary>PEP8CI check login.py</summary>
+   <img src="doc/features/testing/validation/login-validation.jpg">
+   </details>
+
+   <details><summary>PEP8CI check questionanswer_lev_one.py</summary>
+   <img src="doc/features/testing/validation/questionanswer-validation.jpg">
+   </details>
+
+   <details><summary>PEP8CI colors.py</summary>
+   <img src="doc/features/testing/validation/colors-validation.jpg">
+   </details>
 
 
 ### Testing user stories
