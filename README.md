@@ -300,6 +300,8 @@ This website was structured with the gym logo which give a gym it character but 
    | Footer  on all pages | On any page scroll to the footer | See phone number and email address | Works as expected |
 
      <details><summary>Screenshots</summary>
+     <img src="doc/features/testing/menutwo-edited.jpg">
+     <img src="doc/features/profile-info.jpg">
      <img src="">
      </details>
 
@@ -310,8 +312,14 @@ This website was structured with the gym logo which give a gym it character but 
    | Return player option | Input 1 or 2   | Sart level 1 or 2  | Works as expected |
 
      <details><summary>Screenshots</summary>
-     <img src="">
-     <img src="">
+     <img src="doc/features/testing/intro-edited.jpg">
+     <img src="doc/features/testing/menutwo-edited.jpg">
+     <img src="doc/features/testing/play-optionstwoedited.jpg">
+     <img src="doc/features/profile-info.jpg">
+     <img src="doc/features/testing/level-optionedited.jpg">
+     <img src="doc/features/level-one.jpg">
+     <img src="doc/features/testing/level-optioneditedtwo.jpg">
+     <img src="doc/features/gamelvl-two.jpg">
      </details>
 
 8. 
@@ -343,7 +351,7 @@ This website was structured with the gym logo which give a gym it character but 
     | Menu and Play game display | Enter required option input| Display the next game section | Works as expected |
 
     <details><summary>Screenshots</summary>
-    <img src="">
+    <img src="doc/features/intro.jpg">
     <img src="">
     </details>
 
@@ -364,7 +372,8 @@ This website was structured with the gym logo which give a gym it character but 
     | Google spread sheet | After level 1 completion fill out name, email and level input | save to google spread sheet | Works as expected |
 
      <details><summary>Screenshots</summary>
-     <img src="">
+     <img src="doc/features/register.jpg">
+     <img src="doc/features/profile-info.jpg">
      <img src="">
      </details>
     
