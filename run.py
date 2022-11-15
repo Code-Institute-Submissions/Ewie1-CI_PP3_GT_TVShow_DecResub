@@ -13,15 +13,15 @@ def logo_page():
     """
     print game logo and name
     """
-    print(Col.YELLOW + "  __________________    ______________   ____________.__  ")               
-    print(Col.YELLOW + " /  _____\__    ___/    \__    ___\   \ /   /   _____|  |__   ______  _  __")
-    print(Col.OKGREEN + "/   \  ___ |    |  ______ |    |   \   Y   /\_____  \|  |  \ /  _ \ \/ \/ /")
-    print(Col.OKGREEN + "\    \_\  \|    | /_____/ |    |    \     / /        |   Y  (  <_> \     /")
-    print(Col.YELLOW + " \______  /|____|         |____|     \___/ /_______  |___|  /\____/ \/\_/")
-    print(Col.YELLOW + "        \/                                         \/     \/            ")
-    print(Col.OKGREEN + "-" * 75)
-    print(Col.Green + "-" * 75)
-    print("")
+
+    print(Col.YELLOW + "    ___ _____     _____       __ _     ")              
+    print(Col.YELLOW + "   / _ /__    \  /__   /\   // _| |__   _____      __")
+    print(Col.OKGREEN + "  / /_\ / / /\_____ / /\\ \ / \ \| '_ \ / _ \ \ /\ / /")
+    print(Col.OKGREEN + " / /_\\ /  / |_____ / /  \ V /_\ | | | | (_) \ V  V /")
+    print(Col.YELLOW + " \____/ \/         \/    \_/ \__|_| |_|\___/ \_/\_/") 
+    print(Col.OKGREEN + "-" * 60)
+    print(Col.Green + "-" * 60)
+    print("")                                               
 
 
 def intro():
