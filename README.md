@@ -111,13 +111,12 @@ This website was structured with the gym logo which give a gym it character but 
 
 ### Frameworks & Tools
 - Git: was used for version control within VSCode to push the code to GitHub
-- GitHub:
-- Gitpod
-- Google Cloud
-- Google Sheets
-- Heroku
-- PEP8
-- VSCode
+- GitHub: was used as a remote repository to store project code
+- Google Cloud: was used to manage access and permissions to the Google Services such as Google auth, sheets etc.
+- Google Sheets: were used to store players details
+- Heroku: was used to deploy the project into live environment
+- PEP8: was used to check my code against Python conventions
+- VSCode: VSCode was used to write the project code using Code Institute template 
 
 ### Python Libraries
 
@@ -129,7 +128,7 @@ This website was structured with the gym logo which give a gym it character but 
 - colorama
 - email_validator
 - gspread
-- google.oauth2.service_account
+- google.oauth2.service_account  - JUSTIFICATION: module used to set up the authentification needed to access the Google API and connect my Service Account with the Credentials function. A login.json file is created with all details the API needs to access the google account. In deployment to heroku this information is stored in the config var section.
 
 ## Features
 
