@@ -156,5 +156,3 @@ def validate_return_player():
         print(Col.YELLOW + "Please check your player name and email")
         print(Col.YELLOW + "Try again")
         validate_return_player()
-
-
