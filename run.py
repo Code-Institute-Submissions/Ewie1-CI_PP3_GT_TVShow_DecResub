@@ -181,7 +181,7 @@ def get_level_one():
     Determine score count
     """
     print("Level 1\n")
-    print(Col.Blue + "Quotes\n")
+    print(Col.Blue + "Quotes!  Guess the show\n")
     while True:
         score = 0
         for question in level_one:
@@ -201,7 +201,7 @@ def get_level_two():
     Determine scores
     """
     print("Level 2\n")
-    print(Col.Blue + "Characters\n")
+    print(Col.Blue + "Characters!   Guess the show\n")
     while True:
         score = 1000
         for question in level_two:
@@ -221,7 +221,7 @@ def get_level_three():
     Determine score count
     """
     print("Level 3\n")
-    print(Col.Blue + "Trivias\n")
+    print(Col.Blue + "Trivias!\n")
     while True:
         score = 2000
         for question in level_three:
