@@ -101,6 +101,7 @@ def save_data_worksheet(data):
     name_save = SHEET.worksheet("player")
     name_save.append_row(data)
     print("Player saved")
+    time.sleep(9)
 
 def get_registered():
     """

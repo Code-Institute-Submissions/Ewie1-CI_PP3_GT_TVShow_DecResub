@@ -1,4 +1,4 @@
-# Gess That TVshow
+# Guess That TVshow
 (Developer: Ewart Hestick)
 
 ![Mockup image]()
