@@ -230,6 +230,7 @@ This website was structured with the gym logo which give a gym it character but 
    <details><summary>Screenshots</summary>
    <img src="doc/features/menufault.jpg">
    <img src="doc/features/playoption-fault.jpg">
+   <img src="doc/features/level-optionfault.jpg">
    <img src="doc/features/info-inputfault.jpg">
    <img src="doc/features/profilematch-fault.jpg">
    <img src="doc/features/wrong-answerfault.jpg">
