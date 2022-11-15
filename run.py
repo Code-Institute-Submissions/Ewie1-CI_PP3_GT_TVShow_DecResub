@@ -101,7 +101,7 @@ def start_game():
     if player_selection == "1":
         clear_screen()
         logo_page()
-        get_question_answers()
+        get_level_one()
     
     elif player_selection == "2":
         clear_screen()
@@ -129,7 +129,7 @@ def return_player_access():
     if player_selection == "1":
         clear_screen()
         logo_page()
-        get_question_answers()
+        get_level_one()()
     
     elif player_selection == "2":
         clear_screen()
@@ -143,7 +143,7 @@ def scores(score):
     """
     Use score count to determine game levels
     """
-    for question in questions:
+    for question in level_one:
         if score == 1000:
             print(Col.YELLOW + "Yaay!!! You cleared Level 1!")
             print(Col.YELLOW + "Register and move on to the next Level")
@@ -180,9 +180,9 @@ def get_level_one():
     print("Level 1\n")
     while True:
         score = 0
-        for question in questions:
+        for question in level_one:
             attempts = 3
-            print(questions[question]["question"])
+            print(level_one[question]["question"])
             ans = input(Col.Green + "Enter Show:")
             check = check_answer(question, ans, score, attempts)
             if check:
@@ -235,7 +235,7 @@ def check_answer(question, ans, score, attempts):
     Check player answer is wrong or correct, 
     print feed back 
     """  
-    if questions[question]["answer"] == ans:
+    if level_one[question]["answer"] == ans:
         print(Col.OKGREEN + f"Good job!{score + 125} \n")
         return True
     elif level_two[question]["answer"] == ans:
