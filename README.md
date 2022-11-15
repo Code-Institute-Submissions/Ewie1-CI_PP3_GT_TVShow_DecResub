@@ -74,25 +74,20 @@
 #### First-time User 
 1. I want to feel welcome
 2. I want to have option to view game instructions
-3. I want to have the option to have a player name and save a profile
+3. I want to see my scores
 4. I want to know when i make a wrong input
-5. I want to know my scores
+5. I want to get a feedback when I win the game
 
 #### Returning User
  
- 5. I want the game to remeber me
- 6. I want to have an easy login option
+ 6. As a retrun user I want to have an easy login option
  7. As a returned user I want to have access to different levels
- 8. I want to 
- 9. I want to "add level column to access levels"
-
-
+ 
 #### Site Owner 
 
-10. As a owner I want the users to have navigation options 
-11. As a owner I want user get feed back if input is wrong
-12. As a site owner I want users info to be save and accessed in a Google Spread Sheet
-13. I want user to play game at different levels
+8.  As a owner I want the users to have navigation options 
+9.  As a owner I want user to have the option to have a player name and save a profile
+10. As a site owner I want users info to be save and accessed in a Google Spread Sheet
 
 ## Design
 
@@ -125,9 +120,9 @@ This website was structured with the gym logo which give a gym it character but 
 
 ### Third Party Libraries
 
-- colorama
-- email_validator
-- gspread
+- colorama - I used colorama to add contrast to the game with OKGREEN and FAIL red to signal user answers and error messages
+- email_validator - I used email_validator to user input email and raise error if the required input format is incorrect 
+- gspread -  I used gspread to add and manipulate data in my Google spreadsheet and to interact with Google APIs
 - google.oauth2.service_account  - JUSTIFICATION: module used to set up the authentification needed to access the Google API and connect my Service Account with the Credentials function. A login.json file is created with all details the API needs to access the google account. In deployment to heroku this information is stored in the config var section.
 
 ## Features
@@ -253,7 +248,7 @@ This website was structured with the gym logo which give a gym it character but 
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
-    | Menu | Input 1 or 2  | Display instructions or Play game options | Works as expected |
+    | Menu | Input 1   | Display instructions or Play game options | Works as expected |
 
      <details><summary>Screenshots</summary>
      <img src="doc/features/testing/intro-edited.jpg">
@@ -261,17 +256,12 @@ This website was structured with the gym logo which give a gym it character but 
      <img src="doc/features/instructions.jpg">
      </details>
 
-3. I want to have the option to have a player name and save a profile
+3. I want to see my scores
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
-   | Play game options | Input 1 or 2 | Paly as a new player or Login as a return player | Works as expected |
+   | Game page |Input correct answer  | Score adds up below answer input | Works as expected |
      <details><summary>Screenshots</summary>
-     <img src="doc/features/testing/intro-edited.jpg">
-     <img src="doc/features/testing/menutwo-edited.jpg">
-     <img scr="doc/features/testing/play-optionsoneedited.jpg">
-     <img src="doc/features/testing/register-edited.jpg">
-     <img src="doc/features/profile-info.jpg">
-     <img src="doc/features/testing/register-completededited.jpg">
+     <img src="doc/features/level-one.jpg">
      </details>
 
 4. I want to know when i make a wrong input
@@ -288,22 +278,19 @@ This website was structured with the gym logo which give a gym it character but 
     <img src="doc/features/wrong-answerfault.jpg">
     </details>
 
-5. I want the game to remeber me
+5. I want to get a feedback when I win the game
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
-   | Login Option | Input 2 on Play game option display |Name, email, game level input feild | Works as expected |
+   | Game page | Complete level | You win message | Works as expected |
 
     <details><summary>Screenshots</summary>
-    <img src="doc/features/testing/menutwo-edited.jpg">
-    <img src="doc/features/profile-info.jpg">
-    <img src="">
-    <img src="">
+    <img src="doc/features/register.jpg">
     </details>
 
-6. I want to have an easy login option   
+6. As a return user I want to have an easy login option   
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
    |-------------|------------|---------------------|-------------------|
-   | Footer  on all pages | On any page scroll to the footer | See phone number and email address | Works as expected |
+   | Menu, Play game, Choose level display | Input 1 or 2  | Selected option displayed | Works as expected |
 
      <details><summary>Screenshots</summary>
      <img src="doc/features/testing/intro-edited.jpg">
@@ -317,7 +304,7 @@ This website was structured with the gym logo which give a gym it character but 
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |   
    |-------------|------------|---------------------|-------------------|
-   | Return player option | Input 1 or 2   | Sart level 1 or 2  | Works as expected |
+   | Return player option | Input 2 and enter profile info | Sart level 1 or 2  | Works as expected |
 
      <details><summary>Screenshots</summary>
      <img src="doc/features/testing/intro-edited.jpg">
@@ -330,29 +317,7 @@ This website was structured with the gym logo which give a gym it character but 
      <img src="doc/features/gamelvl-two.jpg">
      </details>
 
-8. 
-
-   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-   |-------------|------------|---------------------|-------------------|
-   | Membership Cards | Navigate to the About Uspage Scrooll down | Read | Works as expectd |
-
-     <details><summary>Screenshots</summary>
-     <img src="">
-     <img src="">
-     </details>
-
-9. 
-
-   | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-   |-------------|------------|---------------------|-------------------|
-   | Footer - social media section | On any page scroll to the bottom | Click on social media links | Works as expected | 
-
-     <details><summary>Screenshots</summary>
-     <img src="">
-     </details>
-
-
-10. As a owner I want the users to have navigation options 
+8.  As a owner I want the users to have navigation options 
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
@@ -368,17 +333,22 @@ This website was structured with the gym logo which give a gym it character but 
     <img src="doc/features/testing/level-optioneditedtwo.jpg">
     </details>
 
-11. As a owner I want user get feed back if input is wrong
+9.  As a owner I want user to have the option to have a player name and save a profile
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
-    | 404 error page | On non-matched URL| Choose from drop down option | Works as expected |
+    | Play game options | Input 1, cpomplete level 1 and input info | Player profile save | Works as expected |
 
     <details><summary>Screenshots</summary>
-    <img src="">
+    <img src="doc/features/testing/intro-edited.jpg">
+    <img src="doc/features/testing/menutwo-edited.jpg">
+    <img scr="doc/features/testing/play-optionsoneedited.jpg">
+    <img src="doc/features/testing/register-edited.jpg">
+    <img src="doc/features/profile-info.jpg">
+    <img src="doc/features/testing/register-completededited.jpg">
     </details>
 
-12. As a site owner I want users info to be save and accessed in a Google Spread Sheet
+10. As a site owner I want users info to be save and accessed in a Google Spread Sheet
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
