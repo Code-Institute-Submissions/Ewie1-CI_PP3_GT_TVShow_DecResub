@@ -12,7 +12,7 @@ def logo_page():
     """
     print game logo and name
     """
-    print(Col.YELLOW + "  __________________    ______________   ____________.__  "  )               
+    print(Col.YELLOW + "  __________________    ______________   ____________.__  ")               
     print(Col.YELLOW + " /  _____\__    ___/    \__    ___\   \ /   /   _____|  |__   ______  _  __")
     print(Col.OKGREEN + "/   \  ___ |    |  ______ |    |   \   Y   /\_____  \|  |  \ /  _ \ \/ \/ /")
     print(Col.OKGREEN + "\    \_\  \|    | /_____/ |    |    \     / /        |   Y  (  <_> \     / ")
@@ -21,6 +21,7 @@ def logo_page():
     print(Col.OKGREEN + "-" * 75)
     print(Col.Green + "-" * 75)
     print("")
+
 
 def intro():
     """
@@ -37,6 +38,7 @@ def intro():
     logo_page()
     return True
     
+
 def menu():
     """
     Give return player options to continue game
@@ -61,6 +63,7 @@ def menu():
         
     return selected_option     
 
+
 def about_game():
     """
     Decscribe how game is played 
@@ -78,6 +81,7 @@ def about_game():
     logo_page()
     menu()
     return True
+
 
 def start_game():
     """
@@ -108,6 +112,7 @@ def start_game():
 
     return player_selection
 
+
 def return_player_access():
     """
     Give access for level 1 and 2 to return player
@@ -132,6 +137,7 @@ def return_player_access():
 
     return player_selection
     
+
 def scores(score):
     """
     Use score count to determine game levels
@@ -157,11 +163,13 @@ def scores(score):
         else:    
             pass
 
+
 def clear_screen():
     """
     Clear screen
     """
     os.system('clear') 
+
 
 def get_question_answers():
     """
@@ -180,6 +188,7 @@ def get_question_answers():
                 score += 125
                 scores(score)
         break
+
 
 def get_level_two():
     """
@@ -200,6 +209,7 @@ def get_level_two():
                 scores(score)
         break
 
+
 def get_level_three():
     """
     Run game level three
@@ -218,6 +228,7 @@ def get_level_three():
                 scores(score)
         break
           
+
 def check_answer(question, ans, score, attempts):
     """
     Check player answer is wrong or correct, 
@@ -238,12 +249,14 @@ def check_answer(question, ans, score, attempts):
         print(Col.FAIL + "Sorry wrong answer, Try again..")
         return False
 
+
 def continue_play():
     """
     Run function to contniue play
     """
     logo_page()
     
+
 def main():
     """
     Main 
