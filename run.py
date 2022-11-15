@@ -72,7 +72,7 @@ def about_game():
     """
     print("Guess which TV shows names")
     print("There are 3 levels to this game")
-    print(" Level 1 Quotes") 
+    print("Level 1 Quotes") 
     print("Level 2 Characters")
     print("Level 3 Trivias")
     print("Score 1000 points to get to the next level")
