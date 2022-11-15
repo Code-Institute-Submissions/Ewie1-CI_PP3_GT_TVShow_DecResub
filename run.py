@@ -70,12 +70,15 @@ def about_game():
     Decscribe how game is played 
     Return to intro page
     """
-    print("Guess which TV shows these Quotes, Characters and Trevias are from?")
+    print("Guess which TV shows names")
     print("There are 3 levels to this game")
+    print(" Level 1 Quotes") 
+    print("Level 2 Characters")
+    print("Level 3 Trivias")
     print("Score 1000 points to get to the next level")
-    print("One right answer gives you 125 point and no ponits for wrong answers")
-    print("Your answers must be in lowercase and the exact format of the TV show title")
-    print("Each level have a different cateogory of questions and it gets a bit trickier")
+    print("Answer right and score 125 points")
+    print("Your answers must be in lowercase")
+    print("And the exact format of the TV show title")
     print("After completing the first level you can save your player info")
     input(Col.Blue + "Press any key to get back to the Home Screen")
     clear_screen()
@@ -178,6 +181,7 @@ def get_level_one():
     Determine score count
     """
     print("Level 1\n")
+    print(Col.Blue + "Quotes\n")
     while True:
         score = 0
         for question in level_one:
@@ -197,7 +201,7 @@ def get_level_two():
     Determine scores
     """
     print("Level 2\n")
-    print(Col.Blue + "WHICH TV show are the CHARACTERS from?\n")
+    print(Col.Blue + "Characters\n")
     while True:
         score = 1000
         for question in level_two:
@@ -217,6 +221,7 @@ def get_level_three():
     Determine score count
     """
     print("Level 3\n")
+    print(Col.Blue + "Trivias\n")
     while True:
         score = 2000
         for question in level_three:
