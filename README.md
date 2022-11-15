@@ -177,8 +177,9 @@ This website was structured with the gym logo which give a gym it character but 
 - Raise error in info does not exist
 - Option to choose game level to play
   <details><summary>Screenshots</summary>
-   <img src="">
+   <img src="doc/features/play-options.jpg">
    <img src="doc/features/profile-info.jpg">
+   <img src="doc/features/welcomeback.jpg">
    </details>
 
 ### Sign-up
@@ -187,7 +188,7 @@ This website was structured with the gym logo which give a gym it character but 
 - Validates user input values
 - Save name, email and level to a google spread sheet
   <details><summary>Screenshots</summary>
-   <img src=""> 
+   <img src="doc/features/register.jpg"> 
    <img src="doc/features/profile-info.jpg">
    </details>
 
@@ -227,7 +228,11 @@ This website was structured with the gym logo which give a gym it character but 
 - Raise error if return user input info does not exist
 - Raise error if options input values are not to the required format
    <details><summary>Screenshots</summary>
-   <img src="">
+   <img src="doc/features/menufault.jpg">
+   <img src="doc/features/playoption-fault.jpg">
+   <img src="doc/features/info-inputfault.jpg">
+   <img src="doc/features/profilematch-fault.jpg">
+   <img src="doc/features/wrong-answerfault.jpg">
    </details>
 
 ## Validation

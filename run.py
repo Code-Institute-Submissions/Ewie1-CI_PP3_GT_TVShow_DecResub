@@ -147,6 +147,7 @@ def scores(score):
         if score == 1000:
             print(Col.YELLOW + "Yaay!!! You cleared Level 1!")
             print(Col.YELLOW + "Register and move on to the next Level")
+            time.sleep(9)
             login.get_registered()
             clear_screen()
             logo_page()
