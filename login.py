@@ -66,7 +66,7 @@ def validate_name(name):
     """
     try:
         if len(name) != 5:
-            raise ValueError(Col.RED + f"Your name must be consisted of 5 characters with no spaces")
+            raise ValueError(Col.RED + f"Enter 5 characters with no spaces")
     except ValueError as e:
         print(Col.RED + f"Invalid data: {e}, Please try again.\n")
         return False
@@ -92,7 +92,7 @@ def validate_level(level):
     """
     try:
         if len(level) != 1:
-            raise ValueError(f"Your name must be consisted of 1 number with no spaces")
+            raise ValueError(f"Enter 1, 2 or 3 with no spaces")
     except ValueError as e:
         
         print(Col.RED + f"Invalid data: {e}, Please try again.\n")

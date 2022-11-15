@@ -3,7 +3,7 @@ import os
 import time
 from time import sleep
 from colors import Color as Col
-from questionanswer_lev_one import questions
+from questionanswer_lev_one import level_one
 from questionanswer_lev_one import level_two
 from questionanswer_lev_one import level_three
 import login
@@ -172,7 +172,7 @@ def clear_screen():
     os.system('clear') 
 
 
-def get_question_answers():
+def get_level_one():
     """
     Run  game level one questions
     Determine score count
