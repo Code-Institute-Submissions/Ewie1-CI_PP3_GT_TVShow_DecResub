@@ -137,7 +137,7 @@ def validate_return_player():
         print("Checking login information...")
         time.sleep(1)
         print(f"Welcome Back!  {Col.OKGREEN + n}!")
-        time.sleep(2)
+        time.sleep(9)
     else:
         print("Checking login information...")
         time.sleep(1.5)
