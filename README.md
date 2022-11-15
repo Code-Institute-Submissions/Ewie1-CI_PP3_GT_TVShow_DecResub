@@ -247,7 +247,7 @@ This website was structured with the gym logo which give a gym it character but 
    | Color contrast |  Welcome message | Comforting load speed | Works as expected |
 
    <details><summary>Screenshots</summary>
-   <img src="">
+   <img src="doc/features/testing/intro-edited.jpg">
    </details>
 
 2.  I want to have option to view game instructions
@@ -257,7 +257,8 @@ This website was structured with the gym logo which give a gym it character but 
     | Menu | Input 1 or 2  | Display instructions or Play game options | Works as expected |
 
      <details><summary>Screenshots</summary>
-     <img src="">
+     <img src="doc/features/testing/menuone-edited.jpg">
+     <img src="doc/features/instructions.jpg">
      </details>
 
 3. I want to have the option to have a player name and save a profile
@@ -265,6 +266,7 @@ This website was structured with the gym logo which give a gym it character but 
    |-------------|------------|---------------------|-------------------|
    | Play game options | Input 1 or 2 | Paly as a new player or Login as a return player | Works as expected |
     <details><summary>Screenshots</summary>
+    <img src="">
     <img src="">
     </details>
 
@@ -283,6 +285,8 @@ This website was structured with the gym logo which give a gym it character but 
    | Login Option | Input 2 on Play game option display |Name, email, game level input feild | Works as expected |
 
     <details><summary>Screenshots</summary>
+    <img src="doc/features/testing/menutwo-edited.jpg">
+    <img src="doc/features/profile-info.jpg">
     <img src="">
     </details>
 
