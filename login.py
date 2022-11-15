@@ -120,11 +120,11 @@ def get_registered():
     data = []
     n = get_user_name()
     e = get_user_email()
-    l = get_user_level()
+    lv = get_user_level()
 
     data.append(n)
     data.append(e)
-    data.append(l)
+    data.append(lv)
     new_data = [val for val in data]
     save_data_worksheet(new_data)
 
@@ -136,11 +136,11 @@ def validate_return_player():
     info = []
     n = get_user_name()
     e = get_user_email()
-    l = get_user_level()
+    lv = get_user_level()
 
     info.append(n)
     info.append(e)
-    info.append(l)
+    info.append(lv)
 
     player_data = SHEET.worksheet("player").get_all_values()
 
