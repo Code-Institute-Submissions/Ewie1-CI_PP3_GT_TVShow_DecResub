@@ -8,6 +8,7 @@ from questionanswer_lev_one import level_two
 from questionanswer_lev_one import level_three
 import login
 
+
 def logo_page():
     """
     print game logo and name
@@ -15,9 +16,9 @@ def logo_page():
     print(Col.YELLOW + "  __________________    ______________   ____________.__  ")               
     print(Col.YELLOW + " /  _____\__    ___/    \__    ___\   \ /   /   _____|  |__   ______  _  __")
     print(Col.OKGREEN + "/   \  ___ |    |  ______ |    |   \   Y   /\_____  \|  |  \ /  _ \ \/ \/ /")
-    print(Col.OKGREEN + "\    \_\  \|    | /_____/ |    |    \     / /        |   Y  (  <_> \     / ")
-    print(Col.YELLOW + " \______  /|____|         |____|     \___/ /_______  |___|  /\____/ \/\_/  ")
-    print(Col.YELLOW + "        \/                                         \/     \/               ")
+    print(Col.OKGREEN + "\    \_\  \|    | /_____/ |    |    \     / /        |   Y  (  <_> \     /")
+    print(Col.YELLOW + " \______  /|____|         |____|     \___/ /_______  |___|  /\____/ \/\_/")
+    print(Col.YELLOW + "        \/                                         \/     \/            ")
     print(Col.OKGREEN + "-" * 75)
     print(Col.Green + "-" * 75)
     print("")
@@ -266,6 +267,7 @@ def main():
     intro()
     scores(score)
     menu()
+
 
 main()
 

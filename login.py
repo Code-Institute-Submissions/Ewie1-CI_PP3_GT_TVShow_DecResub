@@ -15,6 +15,7 @@ SCOPED_LOGIN = LOGIN.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_LOGIN)
 SHEET = GSPREAD_CLIENT.open("login")
 
+
 def get_user_name():
     """
     get player name
@@ -28,6 +29,7 @@ def get_user_name():
             print("Thankyou")
             break
     return name_data
+
 
 def get_user_email():
     """
@@ -43,6 +45,7 @@ def get_user_email():
             break
     return email_data
 
+
 def get_user_level():
     """
     get player level
@@ -56,17 +59,19 @@ def get_user_level():
             break
     return level_data
 
+
 def validate_name(name):
     """
     Validate player name
     """
     try:
         if len(name) != 5:
-            raise ValueError(Col.RED + f"Your name must be consisted of 5 characters with no spaces, you provided {len(name)}")
+            raise ValueError(Col.RED + f"Your name must be consisted of 5 characters with no spaces")
     except ValueError as e:
         print(Col.RED + f"Invalid data: {e}, Please try again.\n")
         return False
     return True
+
 
 def val_email(email):
     """
@@ -80,18 +85,20 @@ def val_email(email):
         return False
     return True
 
+
 def validate_level(level):
     """
     Validate player name
     """
     try:
         if len(level) != 1:
-            raise ValueError(f"Your name must be consisted of 1 number with no spaces, you provided {len(level)}")
+            raise ValueError(f"Your name must be consisted of 1 number with no spaces")
     except ValueError as e:
         
         print(Col.RED + f"Invalid data: {e}, Please try again.\n")
         return False
     return True
+
 
 def save_data_worksheet(data):
     """
@@ -103,6 +110,7 @@ def save_data_worksheet(data):
     name_save.append_row(data)
     print("Player saved")
     time.sleep(9)
+
 
 def get_registered():
     """
@@ -119,6 +127,7 @@ def get_registered():
     data.append(l)
     new_data = [val for val in data]
     save_data_worksheet(new_data)
+
 
 def validate_return_player():
     """
