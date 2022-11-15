@@ -292,6 +292,8 @@ This website was structured with the gym logo which give a gym it character but 
     <details><summary>Screenshots</summary>
     <img src="doc/features/testing/menutwo-edited.jpg">
     <img src="doc/features/profile-info.jpg">
+    <img src="">
+    <img src="">
     </details>
 
 6. I want to have an easy login option   
@@ -305,7 +307,7 @@ This website was structured with the gym logo which give a gym it character but 
      <img src="">
      </details>
 
-7.  As a return user I want to have access to different levels
+7. As a return user I want to have access to different levels
 
    | **Feature** | **Action** | **Expected Result** | **Actual Result** |   
    |-------------|------------|---------------------|-------------------|
@@ -374,6 +376,7 @@ This website was structured with the gym logo which give a gym it character but 
      <details><summary>Screenshots</summary>
      <img src="doc/features/register.jpg">
      <img src="doc/features/profile-info.jpg">
+     <img src="">
      <img src="">
      </details>
     
