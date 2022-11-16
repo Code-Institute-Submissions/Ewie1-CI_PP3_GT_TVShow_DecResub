@@ -132,7 +132,7 @@ def return_player_access():
     if player_selection == "1":
         clear_screen()
         logo_page()
-        get_level_one()()
+        get_level_one()
     
     elif player_selection == "2":
         clear_screen()
@@ -193,6 +193,7 @@ def get_level_one():
                 score += 125
                 scores(score)
         break
+    restart_level()
 
 
 def get_level_two():
@@ -202,6 +203,7 @@ def get_level_two():
     """
     print("Level 2\n")
     print(Col.Blue + "Characters!   Guess the show\n")
+
     while True:
         score = 1000
         for question in level_two:
@@ -213,6 +215,7 @@ def get_level_two():
                 score += 125
                 scores(score)
         break
+    restart_level_two()
 
 
 def get_level_three():
@@ -233,7 +236,8 @@ def get_level_three():
                 score += 125
                 scores(score)
         break
-          
+    restart_level_three()
+
 
 def check_answer(question, ans, score, attempts):
     """
@@ -254,6 +258,72 @@ def check_answer(question, ans, score, attempts):
     else:
         print(Col.FAIL + "Sorry wrong answer, Try again..")
         return False
+
+
+def restart_level_one():
+    """
+    Give access for level 1 and 2 to return player
+    """
+    print(Col.YELLOW + "Enter Level 3 to Restart Level")
+    print(Col.YELLOW + "Enter 4 to Exit to Main Menu")
+    player_selection = input()
+
+    while player_selection not in ("3", "4"):
+        print(Col.RED + "You can only choose 3 or 4:")
+        player_selection = input()
+
+    if player_selection == "3":
+        clear_screen()
+        logo_page()
+        get_level_one()
+    elif player_selection == "4":
+        main()
+    
+    return player_selection 
+
+
+def restart_level_two():
+    """
+    Give access for level 1 and 2 to return player
+    """
+    print(Col.YELLOW + "Enter Level 3 to Restart Level")
+    print(Col.YELLOW + "Enter 4 to Exit to Main Menu")
+    player_selection = input()
+
+    while player_selection not in ("3", "4"):
+        print(Col.RED + "You can only choose 3 or 4:")
+        player_selection = input()
+
+    if player_selection == "3":
+        clear_screen()
+        logo_page()
+        get_level_two()
+    elif player_selection == "4":
+        main()
+    
+    return player_selection  
+
+
+def restart_level_three():
+    """
+    Give access for level 1 and 2 to return player
+    """
+    print(Col.YELLOW + "Enter Level 3 to Restart Level")
+    print(Col.YELLOW + "Enter 4 to Exit to Main Menu")
+    player_selection = input()
+
+    while player_selection not in ("3", "4"):
+        print(Col.RED + "You can only choose 3 or 4:")
+        player_selection = input()
+
+    if player_selection == "3":
+        clear_screen()
+        logo_page()
+        get_level_three()
+    elif player_selection == "4":
+        main()
+    
+    return player_selection                 
 
 
 def main():
