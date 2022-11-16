@@ -13,8 +13,8 @@
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
     2. [User Stories](#user-stories)
-3. [Design](#design)
-    1. [Structure](#structure)
+3. [Technical Design](#technical-design)
+    1. [Flowchart](#flowchart)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Frameworks & Tools](#frameworks-&-tools)
@@ -82,8 +82,11 @@
 8.  As a owner I want the users to have navigation options 
 9.  As a owner I want user to have the option to have a player name and save a profile
 10. As a site owner I want users info to be save and accessed in a Google Spread Sheet
+11. As a site owner  I want the user to be able to restart game or level
 
 ## Technical Design
+
+### Flowchart
 
 - Flowchart to site logic and structure 
 
@@ -208,7 +211,7 @@
    <img src="doc/features/gamelevl-three.jpg">
    </details>
 
-### End Game
+### Restart game
 ### User Input Validation
 - Raise error if name input values are not to the required format
 - Raise error if email input values are not to the required format
