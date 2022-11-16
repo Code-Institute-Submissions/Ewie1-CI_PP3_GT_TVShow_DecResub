@@ -274,6 +274,7 @@ def restart_level_one():
         logo_page()
         get_level_one()
     elif player_selection == "4":
+        clear_screen()
         main()
     
     return player_selection 
@@ -296,6 +297,7 @@ def restart_level_two():
         logo_page()
         get_level_two()
     elif player_selection == "4":
+        clear_screen()
         main()
     
     return player_selection  
@@ -318,6 +320,7 @@ def restart_level_three():
         logo_page()
         get_level_three()
     elif player_selection == "4":
+        clear_screen()
         main()
     
     return player_selection                 
