@@ -185,15 +185,14 @@ def get_level_one():
     while True:
         score = 0
         for question in level_one:
-            attempts = 3
             print(level_one[question]["question"])
             ans = input(Col.Green + "Enter Show:")
-            check = check_answer(question, ans, score, attempts)
+            check = check_answer(question, ans, score)
             if check:
                 score += 125
                 scores(score)
         break
-    restart_level()
+    restart_level_one()
 
 
 def get_level_two():
@@ -207,10 +206,9 @@ def get_level_two():
     while True:
         score = 1000
         for question in level_two:
-            attempts = 3
             print(level_two[question]["question"])
             ans = input(Col.Green + "Enter Show:")
-            check = check_answer(question, ans, score, attempts)
+            check = check_answer(question, ans, score)
             if check:
                 score += 125
                 scores(score)
@@ -228,10 +226,9 @@ def get_level_three():
     while True:
         score = 2000
         for question in level_three:
-            attempts = 3
             print(level_three[question]["question"])
             ans = input(Col.Green + "Enter Show:")
-            check = check_answer(question, ans, score, attempts)
+            check = check_answer(question, ans, score)
             if check:
                 score += 125
                 scores(score)
@@ -239,7 +236,7 @@ def get_level_three():
     restart_level_three()
 
 
-def check_answer(question, ans, score, attempts):
+def check_answer(question, ans, score):
     """
     Check player answer is wrong or correct, 
     print feed back 
@@ -329,6 +326,7 @@ def restart_level_three():
 def main():
     """
     Main 
+    Call game functions
     """
     score = 0
     logo_page()
