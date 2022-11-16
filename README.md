@@ -204,6 +204,7 @@
    </details>
 
 ### Game Levels
+  The game faetures three levels with 3 cateogories Quotes, Characters and Trivia
 - Three game levels
   <details><summary>Screenshots</summary>
    <img src="doc/features/level-one.jpg">
@@ -212,6 +213,13 @@
    </details>
 
 ### Restart game
+   The restart game give the player the option to reset the current game level or exit to the game main menu
+- Input 3 to restart game level
+- Input 4 to reset game
+   <details><summary>Screenshots</summary>
+   <img src="doc/features/play-options.jpg">
+   </details>   
+
 ### User Input Validation
 - Raise error if name input values are not to the required format
 - Raise error if email input values are not to the required format
