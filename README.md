@@ -444,7 +444,7 @@ This application has been deployed from GitHub to Heroku by following the steps:
 6. Type git clone and paste the URL from the clipboard ($ git clone <span>https://</span>github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7. Press Enter to create your local clone
 
-[Back to Table Of Contents](#table-of-contents)
+[Back to Table Of Contents](#table-of-content)
 
 ## Credits
 ### Code
