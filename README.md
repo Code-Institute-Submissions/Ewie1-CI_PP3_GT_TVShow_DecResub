@@ -386,6 +386,15 @@
      <img src="doc/features/testing/register-completededited.jpg">
      <img src="doc/features/testing/spread-sheet.jpg">
      </details>
+
+11. I want to get a feedback when I win the game
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | End of level | Input 3 or 4 | rest level or reset game | Works as expected |
+
+     <details><summary>Screenshots</summary>
+     <img src="doc/features/restart-game.jpg">
+     </details>     
     
 ## Bugs
 - Bug: The site was deployed with an error message of unable to find login file 
