@@ -42,7 +42,8 @@ def intro():
 
 def menu():
     """
-    Give return player options to continue game
+    Navigate to intructions
+    Input option to play game
     """
     time.sleep(0.5)
     print(Col.Blue + "Pick a choice from the Menu")
@@ -90,6 +91,8 @@ def about_game():
 def start_game():
     """
     Determine if palyer is new or Retruned
+    Give return player options to continue game
+    Login
     """
     time.sleep(0.5)
     print(Col.Blue + "Are you new to this game?")
@@ -257,9 +260,10 @@ def check_answer(question, ans, score):
 
 def restart_level_one():
     """
-    Give access for level 1 and 2 to return player
+    Restart level
+    Reset game
     """
-    print(Col.YELLOW + "Enter Level 3 to Restart Level")
+    print(Col.YELLOW + "Enter 3 to Restart Level")
     print(Col.YELLOW + "Enter 4 to Exit to Main Menu")
     player_selection = input()
 
@@ -280,9 +284,10 @@ def restart_level_one():
 
 def restart_level_two():
     """
-    Give access for level 1 and 2 to return player
+    Restart level
+    Reset game
     """
-    print(Col.YELLOW + "Enter Level 3 to Restart Level")
+    print(Col.YELLOW + "Enter 3 to Restart Level")
     print(Col.YELLOW + "Enter 4 to Exit to Main Menu")
     player_selection = input()
 
@@ -303,9 +308,10 @@ def restart_level_two():
 
 def restart_level_three():
     """
-    Give access for level 1 and 2 to return player
+    Restart level
+    Reset game
     """
-    print(Col.YELLOW + "Enter Level 3 to Restart Level")
+    print(Col.YELLOW + "Enter 3 to Restart Level")
     print(Col.YELLOW + "Enter 4 to Exit to Main Menu")
     player_selection = input()
 
