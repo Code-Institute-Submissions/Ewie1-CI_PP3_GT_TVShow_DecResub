@@ -135,7 +135,7 @@ def return_player_access():
     if player_selection == "1":
         clear_screen()
         logo_page()
-        get_level_one()
+        get_level_one_return()
     
     elif player_selection == "2":
         clear_screen()
@@ -187,6 +187,26 @@ def get_level_one():
     print(Col.Blue + "Quotes!  Guess the show\n")
     while True:
         score = 0
+        for question in level_one:
+            print(level_one[question]["question"])
+            ans = input(Col.Green + "Enter Show:")
+            check = check_answer(question, ans, score)
+            if check:
+                score += 125
+                scores(score)
+        break
+    restart_level_one()
+
+
+def get_level_one_return():
+    """
+    Run  game level one questions
+    Determine score count
+    """
+    print("Level 1\n")
+    print(Col.Blue + "Quotes!  Guess the show\n")
+    while True:
+        score = 1000
         for question in level_one:
             print(level_one[question]["question"])
             ans = input(Col.Green + "Enter Show:")
