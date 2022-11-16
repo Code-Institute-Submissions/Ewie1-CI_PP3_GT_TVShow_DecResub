@@ -215,7 +215,7 @@ def get_level_one_return():
                 score += 125
                 scores(score)
         break
-    restart_level_one()
+    restart_level_one_return()
 
 
 def get_level_two():
@@ -300,6 +300,30 @@ def restart_level_one():
         main()
     
     return player_selection 
+
+
+def restart_level_one_return():
+    """
+    Restart level
+    Reset game
+    """
+    print(Col.YELLOW + "Enter 3 to Restart Level")
+    print(Col.YELLOW + "Enter 4 to Exit to Main Menu")
+    player_selection = input()
+
+    while player_selection not in ("3", "4"):
+        print(Col.RED + "You can only choose 3 or 4:")
+        player_selection = input()
+
+    if player_selection == "3":
+        clear_screen()
+        logo_page()
+        get_level_one_return()
+    elif player_selection == "4":
+        clear_screen()
+        main()
+    
+    return player_selection
 
 
 def restart_level_two():
