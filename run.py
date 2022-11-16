@@ -246,11 +246,9 @@ def check_answer(question, ans, score):
         return True
     elif level_two[question]["answer"] == ans:
         print(Col.OKGREEN + f"Good job!{score + 125} \n")
-        print("level 2")
         return True
     elif level_three[question]["answer"] == ans:
         print(Col.OKGREEN + f"Good job!{score + 125} \n")
-        print("level 3")
         return True
     else:
         print(Col.FAIL + "Sorry wrong answer, Try again..")
