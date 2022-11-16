@@ -1,9 +1,12 @@
 # Guess That TVshow
 (Developer: Ewart Hestick)
 
-![Mockup image](doc/features/game.jpg)
+![Mockup image](doc/features/intro.jpg)
 
 [Live webpage](https://guess-that-tvshow2.herokuapp.com/)
+
+## About
+ A fun quiz game with three level of questions with Quotes, Characters and Trivias about some of the most popular TV shows. Dare yourself to complete all three levels.
 
 ## Table of Content
 
