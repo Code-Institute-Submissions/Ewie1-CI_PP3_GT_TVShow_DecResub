@@ -158,7 +158,7 @@ def scores(score):
             logo_page()
             get_level_two()
         elif score == 2000:
-            print(Col.YELLOW + "Yaay!!! You cleared Level 2!")
+            print(Col.YELLOW + "Yaay!!! You cleared this Level !")
             time.sleep(2)
             clear_screen()
             logo_page()
