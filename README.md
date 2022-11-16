@@ -421,4 +421,14 @@ This application has been deployed from GitHub to Heroku by following the steps:
 [Back to Table Of Contents](#table-of-contents)
 
 ## Credits
+### Code
+- [Stack overflow](https://stackoverflow.com/questions/20302331/typing-effect-in-python)  
+- [W3School](https://www.w3schools.com/)
+- [DEV](https://dev.to/) inspiration on "How to build a quizz game with python
+- [Rishabh Singh](https://dev.to/mindninjax) inspiration on "How to build a quizz game with python
+- [PYPI](https://pypi.org/) on how to install "email_validator" and colorama 
 ## Aknowledgements
+
+- Code Institute community on Slack for resources and support
+- My Mentor Mo for the guidance, tips and resources, also for challenging my limitsc
+- My partner for giving the the time and being patient 
