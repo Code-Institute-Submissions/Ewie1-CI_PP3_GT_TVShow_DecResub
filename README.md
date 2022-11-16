@@ -83,14 +83,14 @@
 9.  As a owner I want user to have the option to have a player name and save a profile
 10. As a site owner I want users info to be save and accessed in a Google Spread Sheet
 
-## Design
+## Technical Design
 
-### Structure
-This website was structured with the gym logo which give a gym it character but also with the regular easy to use nav bar, a body of information and the regular footer which give the final characteristics of a funtional webpage. The wedsite has three pages:
+- Flowchart to site logic and structure 
 
-- Home 
-- About page
-- Become a member page
+ <details><summary>Flowchart</summary>
+   <img src="doc/features/testing/validation/flowchart.jpg">
+   </details>
+
 
 ## Technologies Used
 
@@ -99,6 +99,7 @@ This website was structured with the gym logo which give a gym it character but 
 - Python
 
 ### Frameworks & Tools
+
 - Git: was used for version control within VSCode to push the code to GitHub
 - GitHub: was used as a remote repository to store project code
 - Google Cloud: was used to manage access and permissions to the Google Services such as Google auth, sheets etc.
@@ -106,6 +107,7 @@ This website was structured with the gym logo which give a gym it character but 
 - Heroku: was used to deploy the project into live environment
 - PEP8: was used to check my code against Python conventions
 - VSCode: VSCode was used to write the project code using Code Institute template 
+- [Diagrams.net](https://app.diagrams.net/) was used to draw flowchart
 
 ### Python Libraries
 
