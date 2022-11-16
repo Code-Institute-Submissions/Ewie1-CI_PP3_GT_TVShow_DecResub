@@ -132,6 +132,7 @@ def get_registered():
 def validate_return_player():
     """
     Get player info, validate 
+    Welcome back player
     """    
     info = []
     n = get_user_name()

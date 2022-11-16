@@ -256,13 +256,6 @@ def check_answer(question, ans, score, attempts):
         return False
 
 
-def continue_play():
-    """
-    Run function to contniue play
-    """
-    logo_page()
-    
-
 def main():
     """
     Main 
