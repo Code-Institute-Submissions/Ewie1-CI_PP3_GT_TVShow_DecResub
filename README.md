@@ -217,10 +217,11 @@
 - Input 3 to restart game level
 - Input 4 to reset game
    <details><summary>Screenshots</summary>
-   <img src="doc/features/play-options.jpg">
+   <img src="doc/features/restart-game.jpg">
    </details>   
 
 ### User Input Validation
+  All user input are validate and returned to the user as a red fault message if the format is inccorrect ot input doesn't match 
 - Raise error if name input values are not to the required format
 - Raise error if email input values are not to the required format
 - Raise error if level input values are not to the required format
