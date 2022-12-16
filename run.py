@@ -48,6 +48,8 @@ def menu():
     time.sleep(0.5)
     print(Col.Blue + "Pick a choice from the Menu")
     time.sleep(0.5)
+    print(Col.Blue + "Enter numder 1 or 2 for you choice")
+    time.sleep(0.5)
     options = "1. About Game          2. Play Game\n"
     selected_option = input(options)
     
@@ -97,6 +99,8 @@ def start_game():
     time.sleep(0.5)
     print(Col.Blue + "Are you new to this game?")
     time.sleep(0.5)
+    print(Col.Blue + "Enter numder 1 or 2 for you choice")
+    time.sleep(0.5)
     new_player = "1) I am a new player      2) Log me in\n"
     player_selection = input(new_player)
 
@@ -124,7 +128,11 @@ def return_player_access():
     """
     Give access for level 1 and 2 to return player
     """
+    time.sleep(0.5)
     print(Col.Blue + "Choose Level")
+    time.sleep(0.5)
+    print(Col.Blue + "Enter numder 1 or 2 for you choice")
+    time.sleep(0.5)
     new_player = "Level 1       Level 2\n"
     player_selection = input(new_player)
 
@@ -198,7 +206,7 @@ def get_level_one():
                     scores(score)
                     break
                 attempts -= 1
-                if attempts == 0:
+                if attempts == 0 and ans == "":
                     restart_level_one()    
         break
     restart_level_one()
@@ -214,12 +222,19 @@ def get_level_one_return():
     while True:
         score = 1000
         for question in level_one:
-            print(level_one[question]["question"])
-            ans = input(Col.Green + "Enter Show:")
-            check = check_answer(question, ans, score)
-            if check:
-                score += 125
-                scores(score)
+            attempts = 3
+            while attempts > 0:
+                print(level_one[question]["question"])
+                ans = input(Col.Green + "Enter Show:")
+                check = check_answer(question, ans, attempts, score)
+                if check:
+                    score += 125
+                    scores(score)
+                    break
+                attempts -= 1
+                if attempts == 0 and ans == "":
+                    restart_level_one_return()
+   
         break
     restart_level_one_return()
 
@@ -235,12 +250,18 @@ def get_level_two():
     while True:
         score = 1000
         for question in level_two:
-            print(level_two[question]["question"])
-            ans = input(Col.Green + "Enter Show:")
-            check = check_answer(question, ans, score)
-            if check:
-                score += 125
-                scores(score)
+            attempts = 3
+            while attempts > 0:
+                print(level_two[question]["question"])
+                ans = input(Col.Green + "Enter Show:")
+                check = check_answer(question, ans, attempts, score)
+                if check:
+                    score += 125
+                    scores(score)
+                    break
+                attempts -= 1
+                if attempts == 0 and ans == "":
+                    restart_level_two()  
         break
     restart_level_two()
 
@@ -255,12 +276,18 @@ def get_level_three():
     while True:
         score = 2000
         for question in level_three:
-            print(level_three[question]["question"])
-            ans = input(Col.Green + "Enter Show:")
-            check = check_answer(question, ans, score)
-            if check:
-                score += 125
-                scores(score)
+            attempts = 3
+            while attempts > 0:
+                print(level_three[question]["question"])
+                ans = input(Col.Green + "Enter Show:")
+                check = check_answer(question, ans, attempts, score)
+                if check:
+                    score += 125
+                    scores(score)
+                    break
+                    attempts -= 1
+                    if attempts == 0 and ans == "":
+                        restart_level_three()  
         break
     restart_level_three()
 
@@ -269,21 +296,22 @@ def check_answer(question, ans, attempts, score):
     """
     Check player answer is wrong or correct, 
     print feed back 
-    """  
+    """
     if level_one[question]["answer"] == ans:
-        print(Col.OKGREEN + f"Good job!{score + 125} \n")
+        print(Col.OKGREEN + f"Good job! {score + 125}points! \n")
         return True
     elif level_two[question]["answer"] == ans:
-        print(Col.OKGREEN + f"Good job!{score + 125} \n")
+        print(Col.OKGREEN + f"Good job! {score + 125}points! \n")
         return True
     elif level_three[question]["answer"] == ans:
-        print(Col.OKGREEN + f"Good job!{score + 125} \n")
+        print(Col.OKGREEN + f"Good job! {score + 125}points! \n")
         return True
     elif ans == "":
-        print(Col.FAIL + f"Invalid: You MUST give an answer  \nYou have {attempts - 1} attempts left :(") 
+        print(Col.FAIL + "Invalid Input: You give no answer...")
+        print(Col.FAIL + f"You MUST give an answer \nYou have {attempts - 1} attempts left :(") 
         return    
     else:    
-        print(Col.YELLOW + f"Wrong Answer :( \nYou have {attempts - 1} left! \nTry again...")
+        print(Col.YELLOW + f"Wrong Answer :( \nYou have {attempts - 1} left! \n 0 point :(")
         return False
         
 
@@ -313,7 +341,7 @@ def restart_level_one():
 
 def restart_level_one_return():
     """
-    Restart level
+    Restart level for return player
     Reset game
     """
     print(Col.YELLOW + "Enter 3 to Restart Level")
