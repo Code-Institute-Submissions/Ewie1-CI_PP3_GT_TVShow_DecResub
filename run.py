@@ -198,6 +198,8 @@ def get_level_one():
                     scores(score)
                     break
                 attempts -= 1
+                if attempts == 0:
+                    restart_level_one()    
         break
     restart_level_one()
 
@@ -277,11 +279,13 @@ def check_answer(question, ans, attempts, score):
     elif level_three[question]["answer"] == ans:
         print(Col.OKGREEN + f"Good job!{score + 125} \n")
         return True
+    elif ans == "":
+        print(Col.FAIL + f"Invalid: You MUST give an answer  \nYou have {attempts - 1} attempts left :(") 
+        return    
     else:    
-        print(f"Wrong Answer :( \nYou have {attempts - 1} left! \nTry again...")
+        print(Col.YELLOW + f"Wrong Answer :( \nYou have {attempts - 1} left! \nTry again...")
         return False
         
-
 
 def restart_level_one():
     """
