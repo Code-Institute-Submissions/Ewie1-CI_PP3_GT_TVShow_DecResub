@@ -188,12 +188,16 @@ def get_level_one():
     while True:
         score = 0
         for question in level_one:
-            print(level_one[question]["question"])
-            ans = input(Col.Green + "Enter Show:")
-            check = check_answer(question, ans, score)
-            if check:
-                score += 125
-                scores(score)
+            attempts = 3
+            while attempts > 0:
+                print(level_one[question]["question"])
+                ans = input(Col.Green + "Enter Show:")
+                check = check_answer(question, ans, attempts, score)
+                if check:
+                    score += 125
+                    scores(score)
+                    break
+                attempts -= 1
         break
     restart_level_one()
 
@@ -259,7 +263,7 @@ def get_level_three():
     restart_level_three()
 
 
-def check_answer(question, ans, score):
+def check_answer(question, ans, attempts, score):
     """
     Check player answer is wrong or correct, 
     print feed back 
@@ -273,9 +277,10 @@ def check_answer(question, ans, score):
     elif level_three[question]["answer"] == ans:
         print(Col.OKGREEN + f"Good job!{score + 125} \n")
         return True
-    else:
-        print(Col.FAIL + "Sorry wrong answer, Try again..")
+    else:    
+        print(f"Wrong Answer :( \nYou have {attempts - 1} left! \nTry again...")
         return False
+        
 
 
 def restart_level_one():
