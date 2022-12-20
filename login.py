@@ -93,8 +93,7 @@ def validate_level(level):
     try:
         if len(level) != 1:
             raise ValueError(f"Enter 1, 2 or 3 with no spaces")
-    except ValueError as e:
-        
+    except ValueError as e: 
         print(Col.RED + f"Invalid data: {e}, Please try again.\n")
         return False
     return True

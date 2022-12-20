@@ -63,8 +63,7 @@ def menu():
     elif selected_option == "2":
         clear_screen()
         logo_page()
-        start_game()
-        
+        start_game() 
     return selected_option     
 
 
@@ -112,7 +111,6 @@ def start_game():
         clear_screen()
         logo_page()
         get_level_one()
-    
     elif player_selection == "2":
         clear_screen()
         logo_page()
@@ -120,7 +118,6 @@ def start_game():
         clear_screen()
         logo_page()
         return_player_access()    
-
     return player_selection
 
 
@@ -200,6 +197,7 @@ def get_level_one():
             while attempts > 0:
                 print(level_one[question]["question"])
                 ans = input(Col.Green + "Enter Show:")
+                validate_answer(ans, attempts)
                 check = check_answer(question, ans, attempts, score)
                 if check:
                     score += 125
@@ -207,7 +205,7 @@ def get_level_one():
                     break
                 attempts -= 1
                 if attempts == 0 and ans == "":
-                    restart_level_one()    
+                    restart_level_one()               
         break
     restart_level_one()
 
@@ -233,8 +231,7 @@ def get_level_one_return():
                     break
                 attempts -= 1
                 if attempts == 0 and ans == "":
-                    restart_level_one_return()
-   
+                    restart_level_one_return()  
         break
     restart_level_one_return()
 
@@ -306,14 +303,29 @@ def check_answer(question, ans, attempts, score):
     elif level_three[question]["answer"] == ans:
         print(Col.OKGREEN + f"Good job! {score + 125}points! \n")
         return True
-    elif ans == "":
-        print(Col.FAIL + "Invalid Input: You give no answer...")
-        print(Col.FAIL + f"You MUST give an answer \nYou have {attempts - 1} attempts left :(") 
-        return    
-    else:    
+#   elif ans == "":
+#        print(Col.FAIL + "Invalid Input: You give no answer...")
+#        print(Col.FAIL + f"You MUST give an answer \nYou have {attempts - 1} attempts left :(") 
+#        return   
+    else:   
         print(Col.YELLOW + f"Wrong Answer :( \nYou have {attempts - 1} left! \n 0 point :(")
         return False
         
+
+def validate_answer(answer, attempts):
+    """
+    Check user answer input
+    Raise error is empy string or input is wrong
+    """
+    try:
+        if answer == "":
+            raise ValueError(Col.FAIL + "Empty answer!")
+    except ValueError as e:
+        print(Col.FAIL + f"Invalid Input: {e} \nYou MUST give an answer")
+        print(Col.FAIL + f"You have {attempts -1} attempts left")
+#        return False
+#    return True 
+
 
 def restart_level_one():
     """
@@ -335,7 +347,6 @@ def restart_level_one():
     elif player_selection == "4":
         clear_screen()
         main()
-    
     return player_selection 
 
 
@@ -359,7 +370,6 @@ def restart_level_one_return():
     elif player_selection == "4":
         clear_screen()
         main()
-    
     return player_selection
 
 
@@ -383,7 +393,6 @@ def restart_level_two():
     elif player_selection == "4":
         clear_screen()
         main()
-    
     return player_selection  
 
 
@@ -407,7 +416,6 @@ def restart_level_three():
     elif player_selection == "4":
         clear_screen()
         main()
-    
     return player_selection                 
 
 
