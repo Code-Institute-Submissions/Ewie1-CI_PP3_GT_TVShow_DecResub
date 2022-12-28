@@ -81,6 +81,8 @@ def about_game():
     print("Answer right and score 125 points")
     print("Your answers must be in lowercase")
     print("And the exact format of the TV show title")
+    print("Type 'skip' to skip question")
+    print("Type 'menu' for menu option to restart level or return main page")
     print("After completing the first level you can save your player info")
     input(Col.Blue + "Press any key to get back to the Home Screen")
     clear_screen()
@@ -193,19 +195,17 @@ def get_level_one():
     while True:
         score = 0
         for question in level_one:
-            attempts = 3
-            while attempts > 0:
+            while True:
                 print(level_one[question]["question"])
                 ans = input(Col.Green + "Enter Show:")
-                validate_answer(ans, attempts)
-                check = check_answer(question, ans, attempts, score)
+                if ans == "skip":
+                    break
+                get_menu(ans)
+                check = check_answer(question, ans, score)
                 if check:
                     score += 125
                     scores(score)
-                    break
-                attempts -= 1
-                if attempts == 0 and ans == "":
-                    restart_level_one()               
+                    break             
         break
     restart_level_one()
 
@@ -255,7 +255,7 @@ def get_level_two():
                 if check:
                     score += 125
                     scores(score)
-                    break
+                    continue
                 attempts -= 1
                 if attempts == 0 and ans == "":
                     restart_level_two()  
@@ -289,7 +289,7 @@ def get_level_three():
     restart_level_three()
 
 
-def check_answer(question, ans, attempts, score):
+def check_answer(question, ans, score):
     """
     Check player answer is wrong or correct, 
     print feed back 
@@ -302,17 +302,26 @@ def check_answer(question, ans, attempts, score):
         return True
     elif level_three[question]["answer"] == ans:
         print(Col.OKGREEN + f"Good job! {score + 125}points! \n")
-        return True
-#   elif ans == "":
-#        print(Col.FAIL + "Invalid Input: You give no answer...")
-#        print(Col.FAIL + f"You MUST give an answer \nYou have {attempts - 1} attempts left :(") 
-#        return   
-    else:   
-        print(Col.YELLOW + f"Wrong Answer :( \nYou have {attempts - 1} left! \n 0 point :(")
+        return True 
+    elif ans != "":   
+        print(Col.YELLOW + f"Wrong Answer") 
+        print(Col.YELLOW + f"You gained 0 point :(")
+        print(Col.YELLOW + "Try again")
         return False
-        
+    else:
+        validate_answer(ans, question)
 
-def validate_answer(answer, attempts):
+
+def get_menu(ans):
+    """
+    Give input option "menu"
+    raise menu to restart level or navigate to main menu 
+    """
+    if ans == "menu":
+        restart_level_one()
+
+
+def validate_answer(answer, question):
     """
     Check user answer input
     Raise error is empy string or input is wrong
@@ -321,8 +330,10 @@ def validate_answer(answer, attempts):
         if answer == "":
             raise ValueError(Col.FAIL + "Empty answer!")
     except ValueError as e:
-        print(Col.FAIL + f"Invalid Input: {e} \nYou MUST give an answer")
-        print(Col.FAIL + f"You have {attempts -1} attempts left")
+        print(Col.FAIL + f"Invalid Input: {e} \nYou MUST give an answer") 
+#        print(Col.FAIL + f"You have {attempts -1} attempts left until next question")
+    
+
 #        return False
 #    return True 
 
