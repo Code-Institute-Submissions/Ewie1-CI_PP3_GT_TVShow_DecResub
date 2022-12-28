@@ -82,7 +82,7 @@ def about_game():
     print("Your answers must be in lowercase")
     print("And the exact format of the TV show title")
     print("Type 'skip' to skip question")
-    print("Type 'menu' for menu option to restart level or return main page")
+    print("Type 'menu' to restart level or return Main Menu")
     print("After completing the first level you can save your player info")
     input(Col.Blue + "Press any key to get back to the Home Screen")
     clear_screen()
@@ -199,8 +199,10 @@ def get_level_one():
                 print(level_one[question]["question"])
                 ans = input(Col.Green + "Enter Show:")
                 if ans == "skip":
+                    print("")
                     break
-                get_menu(ans)
+                if ans == "menu":
+                    restart_level_one()
                 check = check_answer(question, ans, score)
                 if check:
                     score += 125
@@ -220,18 +222,19 @@ def get_level_one_return():
     while True:
         score = 1000
         for question in level_one:
-            attempts = 3
-            while attempts > 0:
+            while True:
                 print(level_one[question]["question"])
                 ans = input(Col.Green + "Enter Show:")
-                check = check_answer(question, ans, attempts, score)
+                if ans == "skip":
+                    print("")
+                    break
+                if ans == "menu":
+                    restart_level_one_return()
+                check = check_answer(question, ans, score)
                 if check:
                     score += 125
                     scores(score)
-                    break
-                attempts -= 1
-                if attempts == 0 and ans == "":
-                    restart_level_one_return()  
+                    break 
         break
     restart_level_one_return()
 
@@ -247,18 +250,20 @@ def get_level_two():
     while True:
         score = 1000
         for question in level_two:
-            attempts = 3
-            while attempts > 0:
+
+            while True:
                 print(level_two[question]["question"])
                 ans = input(Col.Green + "Enter Show:")
-                check = check_answer(question, ans, attempts, score)
+                if ans == "skip":
+                    print("")
+                    break
+                if ans == "menu":
+                    restart_level_two()
+                check = check_answer(question, ans, score)
                 if check:
                     score += 125
                     scores(score)
-                    continue
-                attempts -= 1
-                if attempts == 0 and ans == "":
-                    restart_level_two()  
+                    break
         break
     restart_level_two()
 
@@ -273,18 +278,20 @@ def get_level_three():
     while True:
         score = 2000
         for question in level_three:
-            attempts = 3
-            while attempts > 0:
+           
+            while True:
                 print(level_three[question]["question"])
                 ans = input(Col.Green + "Enter Show:")
-                check = check_answer(question, ans, attempts, score)
+                if ans == "skip":
+                    print("")
+                    break
+                if ans == "menu":
+                    restart_level_three()
+                check = check_answer(question, ans, score)
                 if check:
                     score += 125
                     scores(score)
                     break
-                    attempts -= 1
-                    if attempts == 0 and ans == "":
-                        restart_level_three()  
         break
     restart_level_three()
 
@@ -312,15 +319,6 @@ def check_answer(question, ans, score):
         validate_answer(ans, question)
 
 
-def get_menu(ans):
-    """
-    Give input option "menu"
-    raise menu to restart level or navigate to main menu 
-    """
-    if ans == "menu":
-        restart_level_one()
-
-
 def validate_answer(answer, question):
     """
     Check user answer input
@@ -331,11 +329,6 @@ def validate_answer(answer, question):
             raise ValueError(Col.FAIL + "Empty answer!")
     except ValueError as e:
         print(Col.FAIL + f"Invalid Input: {e} \nYou MUST give an answer") 
-#        print(Col.FAIL + f"You have {attempts -1} attempts left until next question")
-    
-
-#        return False
-#    return True 
 
 
 def restart_level_one():
