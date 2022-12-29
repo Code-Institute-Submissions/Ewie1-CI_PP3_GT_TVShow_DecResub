@@ -237,6 +237,7 @@
    <img src="doc/features/info-inputfault.jpg">
    <img src="doc/features/profilematch-fault.jpg">
    <img src="doc/features/wrong-answerfault.jpg">
+   <img src="doc/features/empty-answerfault.jpg">
    </details>
 
 ## Validation
@@ -398,7 +399,7 @@
      <details><summary>Screenshots</summary>
      <img src="doc/features/restart-game.jpg">
      </details>     
-    
+
 ## Bugs
 - Bug: The site was deployed with an error message of unable to find login file 
   Fix: due to using "login.json" instead of "creds.json" default.js "env" setting needed to be changed from CREDS to LOGIN
@@ -412,6 +413,8 @@
   Fix: Add second line between functions
 - Bug: During validation "E203 whitespace before" in questionanswer_lev_one.py
   Fix: Delete extra space in dictionary
+- Bug: Empty answer input was not controlled
+  Fix: Add try/except error to control empty answer input  
 
 ## Deployment
 
@@ -453,8 +456,44 @@ This application has been deployed from GitHub to Heroku by following the steps:
 - [DEV](https://dev.to/) inspiration on "How to build a quizz game with python
 - [Rishabh Singh](https://dev.to/mindninjax) inspiration on "How to build a quizz game with python
 - [PYPI](https://pypi.org/) on how to install "email_validator" and colorama 
+
 ## Aknowledgements
 
 - Code Institute community on Slack for resources and support
 - My Mentor Mo for the guidance, tips and resources, also for challenging my limitsc
 - My partner for giving the the time and being patient 
+
+## Game Test Info
+### login profile
+- Name: shev1
+- Email: shev@gmail.com
+- level: 1
+
+### Level1 Answers
+- friends
+- the big bang theory
+- game of thrones
+- seinfeld
+- breaking bad
+- south park
+- game of thrones
+- star wars
+
+### Level2 Answers
+- prison break
+- the handmaid's tale
+- game of thrones
+- the fresh prince of belair
+- that 70s show
+- friends
+- mad men
+
+### Level3 Answers
+- korean
+- sarah jessica parker
+- fbi
+- birmingham
+- the crown
+- baltimore
+- lagertha
+- jack bauer
